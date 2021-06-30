@@ -4198,3 +4198,44 @@ input, select, textarea {
 #wrapper .content_second_selects{
 	text-align: center;
 }
+
+/* 서비스 3 */
+
+.content_second_select{
+	margin: 0% 10%;
+}
+.inner p{
+	border: 1px solid white;
+	color: white;
+}
+.carousel-inner{
+	text-align: center;
+}
+
+.carousel-item{
+	display: flex;
+}
+
+#my_min, #my_max{
+	color: white;
+}
+.carousel-control-prev, .carousel-control-next{
+	border: 1px solid white;
+	margin-top: 45%;
+}
+
+.carousel{
+	width: 500px;
+	height: 500px;
+	position: relative;
+	margin: auto;
+	margin-top: 100px;
+	visibility: hidden;
+}
+#button1{
+	margin-left: 80%;
+	margin-top: 50px;
+}
+#button1:focus + .carousel{
+	visibility: visible;
+}
