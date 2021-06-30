@@ -4194,3 +4194,7 @@ input, select, textarea {
 		-ms-filter: none;
 		filter: none;
 	}
+
+#wrapper .content_second_selects{
+	text-align: center;
+}

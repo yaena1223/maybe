@@ -5,3 +5,15 @@ from .models import Song
 def showmain(request):
     songs = Song.objects.all()
     return render(request, 'main/mainpage.html',{'songs':songs})
+
+def service1(request):
+    return render(request,'main/service1.html')
+
+def service2(request):
+    return render(request,'main/service2.html')
+
+def service3(request):
+    return render(request,'main/service3.html')
+
+def board(request):
+    return render(request,'main/board.html')

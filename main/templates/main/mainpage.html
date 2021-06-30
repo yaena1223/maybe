@@ -6,9 +6,9 @@
 <!-- Banner -->
 <section id="banner">
     <div class="inner">
-        <div class="logo"><span class="icon fa-gem"></span></div>
+        
         <h2>This is Solid State</h2>
-        <p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+        <p>Another free + fully responsive site template by <a href="{% url 'main:showmain'%}">HTML5 UP</a></p>
     </div>
 </section>
 
@@ -22,7 +22,7 @@
                 <div class="content">
                     <h2 class="major">Magna arcu feugiat</h2>
                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="{% url 'main:service1' %}" class="special">Learn more</a>
                 </div>
             </div>
         </section>
@@ -34,7 +34,7 @@
                 <div class="content">
                     <h2 class="major">Tempus adipiscing</h2>
                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="{% url 'main:service2'%}" class="special">Learn more</a>
                 </div>
             </div>
         </section>
@@ -46,7 +46,7 @@
                 <div class="content">
                     <h2 class="major">Nullam dignissim</h2>
                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="{% url 'main:service3'%}" class="special">Learn more</a>
                 </div>
             </div>
         </section>
@@ -58,32 +58,13 @@
                 <div class="content">
                     <h2 class="major">Tempus adipiscing</h2>
                     <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-                    <a href="#" class="special">Learn more</a>
+                    <a href="{% url 'main:board'%}" class="special">Learn more</a>
                 </div>
             </div>
         </section>
 
 
 </section>
-
-<!-- Footer -->
-<section id="footer">
-    <div class="inner">						
-        <ul class="copyright">
-            <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-    </div>
-</section>
-
-</div>
-
-<!-- Scripts -->
-<script src="{% static 'js/jquery.min.js'%} "></script>
-<script src="{% static 'js/jquery.scrollex.min.js'%} "></script>
-<script src="{% static 'js/browser.min.js' %}"></script>
-<script src="{% static 'js/breakpoints.min.js'%} "></script>
-<script src="{% static 'js/util.js' %}"></script>
-<script src="{% static 'js/main.js' %}"></script>
 
 
 {% endblock %}
