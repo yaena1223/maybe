@@ -8,4 +8,6 @@ urlpatterns=[
     path('serivce2',service2,name='service2'),
     path('serivce3',service3,name='service3'),
     path('board',board,name='board'),
+    path('low',low,name='low'),
+    path('high',high,name='high'),
 ]
