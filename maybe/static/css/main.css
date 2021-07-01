@@ -4418,8 +4418,12 @@ input, select, textarea {
    font-weight: 100;
 }
 
+.level{
+	text-align: center;
+}
 .level1,.level2,.level3{
-	float:left;
+	display:inline-block;
+	vertical-align: top;
     color:black;
     width:400px; 
     height:500px;
@@ -4429,7 +4433,8 @@ input, select, textarea {
 
 }
 .level1_high,.level2_high,.level3_high{
-	float:left;
+	display:inline-block;
+	vertical-align: top;
     color:black;
     width:400px; 
     height:700px;
@@ -4439,7 +4444,6 @@ input, select, textarea {
 
 }
 .level1,.level1_high{
-	margin-left : 335px;
 	 background-color: rgb(250,154,75);
 	 color: white;
 	 font-family:  'Do Hyeon', sans-serif;
