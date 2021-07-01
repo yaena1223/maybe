@@ -17,3 +17,9 @@ def service3(request):
 
 def board(request):
     return render(request,'main/board.html')
+
+def low(request):
+    return render(request,'main/low.html')
+
+def high(request):
+    return render(request,'main/high.html')

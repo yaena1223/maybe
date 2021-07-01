@@ -217,7 +217,7 @@ input, select, textarea {
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '\f105';
+				content: '?';
 				display: inline-block;
 				font-size: 1.25em;
 				height: 2em;
@@ -3152,7 +3152,7 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:before {
-						content: '\f0c9';
+						content: '?';
 						line-height: inherit;
 					}
 
@@ -4205,7 +4205,7 @@ input, select, textarea {
 	margin: 0% 10%;
 }
 .inner p{
-	border: 1px solid white;
+	/* border: 1px solid white; */
 	color: white;
 }
 .carousel-inner{
@@ -4238,4 +4238,191 @@ input, select, textarea {
 }
 #button1:focus + .carousel{
 	visibility: visible;
+}
+
+
+.audios{
+    display: flex;
+    justify-content: center;
+   }
+   .audios p{
+      display: flex;
+      align-items: center;
+      font-family: 'Do Hyeon', sans-serif;
+      color: white;
+   }
+   .content_second_select{
+      text-align: center;
+   }
+   h3{
+      text-align: center;
+   }
+   .song{
+      display: flex;
+      justify-content: center;
+      width: 450px;
+      height: 200px;
+   }
+   .song_list{
+      display: flex;
+      justify-content: space-between;
+      margin: 100px 0px;
+   }
+   .song_info{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      align-items: center;
+   }
+
+
+/* Tiles */
+
+.tiles {
+   
+   display: flex;
+   justify-content: center;
+
+
+}
+
+   .tiles article {
+      -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+      -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+      -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      position: relative;
+      margin : 20px;
+   
+   }
+
+      .tiles article > .image {
+         -moz-transition: -moz-transform 0.5s ease;
+         -webkit-transition: -webkit-transform 0.5s ease;
+         -ms-transition: -ms-transform 0.5s ease;
+         transition: transform 0.5s ease;
+         position: relative;
+         display: block;
+         width: 100%;
+         border-radius: 4px;
+         overflow: hidden;
+      }
+
+         .tiles article > .image img {
+            width: 500px;
+            height: 500px;
+            
+         }
+
+         .tiles article > .image:before {
+         
+            content: '';
+            display: block;
+            position: absolute;
+            width: 500px;
+            height: 100%;
+            opacity: 1.0;
+            z-index: 1;
+            opacity: 0.8;
+         }
+
+
+
+      .tiles article > a {
+         
+         display: -moz-flex;
+         display: -webkit-flex;
+         display: -ms-flex;
+         display: flex;
+         -moz-flex-direction: column;
+         -webkit-flex-direction: column;
+         -ms-flex-direction: column;
+         flex-direction: column;
+         -moz-align-items: center;
+         -webkit-align-items: center;
+         -ms-align-items: center;
+         align-items: center;
+         -moz-justify-content: center;
+         -webkit-justify-content: center;
+         -ms-justify-content: center;
+         justify-content: center;
+         -moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
+         -webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
+         -ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
+         transition: background-color 0.5s ease, transform 0.5s ease;
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 500px;
+         height: 500px;
+         padding: 1em;
+         border-radius: 4px;
+         border-bottom: 0;
+         color: #ffffff;
+         text-align: center;
+         text-decoration: none;
+         z-index: 3;
+      }
+
+         .tiles article > a > :last-child {
+            margin: 0;
+         }
+
+         .tiles article > a:hover {
+            
+            color: #ffffff !important;
+         }
+
+         .tiles article > a h2 {
+            margin: 0;
+         }
+
+         .tiles article > a .content {
+            -moz-transition: max-height 0.5s ease, opacity 0.5s ease;
+            -webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
+            -ms-transition: max-height 0.5s ease, opacity 0.5s ease;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            width: 100%;
+            max-height: 0;
+            line-height: 1.5;
+         
+            opacity: 0;
+         }
+
+         
+      .tiles article.style1 > .image:before {
+         background-color: #f2849e;
+      }
+
+
+      .tiles article.style6 > .image:before {
+         background-color: #8499e7;
+      }
+
+      body:not(.is-touch) .tiles article:hover > .image {
+         -moz-transform: scale(1.1);
+         -webkit-transform: scale(1.1);
+         -ms-transform: scale(1.1);
+         transform: scale(1.1);
+      }
+
+         body:not(.is-touch) .tiles article:hover > .image:before {
+            background-color: #333333;
+            opacity: 0.35;
+         }
+
+         body:not(.is-touch) .tiles article:hover > .image:after {
+            opacity: 0;
+         }
+
+      body:not(.is-touch) .tiles article:hover .content {
+         max-height: 15em;
+         opacity: 1;
+      }
+
+
+
+#title1{
+   font-family:  'Do Hyeon', sans-serif;
+   font-weight: 100;
 }
