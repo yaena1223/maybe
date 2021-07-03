@@ -4102,7 +4102,7 @@ input::-moz-focus-inner {
 	position: relative;
 	margin: auto;
 	margin-top: 100px;
-	/* visibility: hidden; */
+	visibility: hidden;
 }
 #button1{
 	margin-left: 46%;
@@ -4352,3 +4352,34 @@ input::-moz-focus-inner {
 	margin-top: 150px;
 	text-align: center;
 }
+
+.button3{
+	font-size:25px;
+	text-align: center;
+	margin-top: 100px;
+  }
+
+.holy{
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	margin-top: 100px;
+	text-align: center;
+  }
+  .holy h1{
+	text-align: center;
+  }
+  
+  .holy p{
+	font-size:20px;
+  }
+
+  .login_btn{
+	justify-content: center;
+  }
+
+  #ping{
+	font-size: 20px;
+  }

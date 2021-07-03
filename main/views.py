@@ -1,7 +1,7 @@
 from django.shortcuts import render,get_object_or_404,redirect
-from .models import Song,Board
+from .models import Song,Board,Comment
 from django.utils import timezone
-
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def showmain(request):
@@ -24,12 +24,13 @@ def high(request):
     return render(request,'main/high.html')
 
 def board(request):
-    boards = Board.objects.all()
+    boards = Board.objects.all().order_by('-date')
     return render(request, 'main/board.html',{'boards':boards})
 
 def request_detail(request,id):
     board = get_object_or_404(Board,pk=id)
-    return render(request,'main/request_detail.html',{'board':board})
+    all_comments = board.comments.all().order_by('-created_at')
+    return render(request,'main/request_detail.html',{'board':board,'comments':all_comments})
 
 def request_new(request):
     return render(request,'main/request_new.html')
@@ -62,4 +63,12 @@ def request_delete(request,id):
     request_delete_post = Board.objects.get(id = id)
     request_delete_post.delete()
     return redirect('main:board')
+
+def create_comment(request, board_id):
+	if request.method == "POST":
+		board = get_object_or_404(Board, pk=board_id)
+		current_user = request.user
+		comment_content = request.POST.get('content')
+		Comment.objects.create(content=comment_content, writer=current_user, board=board)
+	return redirect('main:request_detail', board_id)
 

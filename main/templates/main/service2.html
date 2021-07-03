@@ -3,6 +3,16 @@
 {% load static %}
 
 {% block content %}
+<script language="javascript">
+
+    function getSelectValue(frm)
+    {
+     frm.textValue.value = frm.selectBox.options[frm.selectBox.selectedIndex].text;
+     frm.optionValue.value = frm.selectBox.options[frm.selectBox.selectedIndex].value;
+    }
+
+    //-->
+</script>
 
 <div id = 'page-wrapper'>
 
@@ -18,17 +28,20 @@
     <div class="content_second_select">
         <select class="content_second_selects" name="my_min" id="my_min">
             <option value="">나의 최저 음정</option>
-            <option value="1">0옥타브 파</option>
-            <option value="2">0옥타브 솔</option>
-            <option value="3">0옥타브 라</option>
-            <option value="4">0옥타브 시</option>
-            <option value="5">1옥타브 도</option>
-            <option value="6">1옥타브 레</option>
-            <option value="7">1옥타브 미</option>
-            <option value="8">1옥타브 파</option>
-            <option value="9">1옥타브 솔</option>
-            <option value="10">1옥타브 라</option>
-            <option value="11">1옥타브 시</option>
+            <option value="1">0옥타브 도</option>
+			<option value="2">0옥타브 레</option>
+			<option value="3">0옥타브 미</option>
+			<option value="4">0옥타브 파</option>
+			<option value="5">0옥타브 솔</option>
+			<option value="6">0옥타브 라</option>
+			<option value="7">0옥타브 시</option>
+			<option value="8">1옥타브 도</option>
+			<option value="9">1옥타브 레</option>
+			<option value="10">1옥타브 미</option>
+			<option value="11">1옥타브 파</option>
+            <option value="12">1옥타브 솔</option>
+            <option value="13">1옥타브 라</option>
+            <option value="14">1옥타브 시</option>
         </select>
 
         <br>
@@ -53,12 +66,13 @@
             <option value="16">3옥타브 레</option>
             <option value="17">3옥타브 미</option>
             <option value="18">3옥타브 파</option>
+            <option value="19">3옥타브 솔</option>
+            <option value="20">3옥타브 라</option>
+            <option value="21">3옥타브 시</option>
         </select>
-    
-    
     <br>
-
-        <select class="content_second_selects" name="compare_song" id="compare_song">
+    <form name="form">
+        <select class="content_second_selects" name="selectBox" id="selectBox" onChange="getSelectValue(this.form);">
             <option value="">부르고 싶은 노래</option>
             <option value="">마크튭&구윤회 - Marry Me</option>
             <option value="">aespa - NEXT LEVEL</option>
@@ -112,11 +126,14 @@
             <option value="">노라조 - 형</option>
             <option value="">안예은 - 홍연</option>
         </select>
+        <br><br><br>
+        당신이 부르고 싶은 노래는<br><br><input class="want_song" type="text" name="textValue" width="10">
+    </form>
         
         <br><br>
 
 
-        <button id = 'btn-change-text'>제출</button>
+        <button id = 'btn-change-text'>검사</button>
         <br><br><br><br>
         <p id='special'></p>
 
