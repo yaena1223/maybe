@@ -16,6 +16,5 @@ urlpatterns=[
     path('request_update/<str:id>',request_update,name='request_update'),
     path('request_delete/<str:id>',request_delete,name='request_delete'),
     path('request_create',request_create,name='request_create'),
-
-
+    path('<str:board_id>/create_comment',create_comment,name='create_comment'),
 ]
