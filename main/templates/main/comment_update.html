@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<!-- 본문내용 -->
+<section id="main">
+  <div class="container">
+    <div class="row">
+
+    </div>
+    <!-- Content -->
+    <div id="content" class="col-8 col-12-medium imp-medium">
+      <!-- Post -->
+      <article class="box post">
+        <header>
+          <h1> <strong>{{question.title}}</strong></h1><br />
+        </header>
+
+        <form class="form-row" action="#" method="POST" enctype="multipart/form-data">
+
+          {% csrf_token %}
+          <textarea class="form-control" placeholder="답변을 남겨주세요" rows="5" name="content" required
+            id="comment">{{comment.content}}</textarea>
+          <hr>
+          <div class="contact-submit input">
+            <input name="submit" type="submit" class="form-control" id="submit" value="수정" />
+          </div>
+        </form>
+      </article>
+
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<section id="main">
+    <div class="container">
+   
+        <div id="content" style="margin-top: 150px;" >
+
+            
+
+                    <p style="font-family: 'Do Hyeon', sans-serif;font-size: 40px;"> 노래 요청하기</p>
+                    <hr>
+
+                <div>
+                    <form action="{%url 'main:request_create' %}" method="POST" enctype="multipart/form-data">
+                        {%csrf_token%}
+
+                        <p id = "new">노래  <input type="text"  name="song" ></p>
+                        <p id = "new">가수  <input type="text"  name="singer" ></p>
+                        <p id = "new">비고  <textarea name="extra" cols="30" rows="10"></textarea></p>
+                        <br>
+                        <button type="submit">제출</button>
+                    </form>
+                </div>    
+      
+        </div>
+    </div>
+</section>
+
+{% else %} 
+<div class = "authentication">
+    <h3> 로그인 후 글 등록 가능</h3>
+    <a href = "{% url 'account_login' %}"  class="btn btn-warning">로그인</button></a>
+    <a href = "{% url 'account_signup' %}" class="btn btn-warning">회원가입</a>
+</div>
+</div>
+{% endif %}
+{% endblock %} 
