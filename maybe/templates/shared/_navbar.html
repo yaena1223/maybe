@@ -18,8 +18,12 @@
                     <li><a href="{% url 'main:service2'%}">노래 가창 가능 여부</a></li>
                     <li><a href="{% url 'main:service3'%}">음정별 노래 추천</a></li>
                     <li><a href="{% url 'main:board'%}">노래 요청 게시판</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a href="{% url 'account_logout'%}">로그아웃</a></li>
+                    {% else %}
+                    <li><a href="{% url 'account_login'%}">로그인</a></li>
+                    <li><a href="{% url 'account_signup'%}">회원가입</a></li>
+                    {% endif %}
                 </ul>
                 <a href="#" class="close">Close</a>
             </div>

@@ -1,9 +1,46 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
 {% block content %}
 
+<section id="main">
+    <div class="container">
+     
 
+            <section id="wrapper">
+                <header>
+                    <div class="inner">
+                        <h2 id="title1">노래 요청 게시판</h2>
+                    </div>
+                </header>
+                <p style="text-align: center; font-family: 'Do Hyeon', sans-serif;font-size: larger;"><a class = "write_icon" href = "{% url 'main:request_new'%}"><i class="far fa-edit fa-2x"></i></a>글 작성하기</p>
 
+            <div id="content" style="padding: 0 1.25em;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col" id="board">노래</th>
+                            <th scope="col" id="board">가수</th>
+                            <th scope="col" id="board">작성자</th>
+                            <th scope="col" id="board">작성날짜</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        {% for board in boards %}
+                        <tr>
+                            <td><a href="{% url 'main:request_detail' board.id %}">{{board.song}}</a></td>
+                            <td>{{board.singer}}</td>
+                            <td>{{board.writer}}</td>
+                            <td>{{board.date}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+
+       
+        
+            </div>
+    </div>
+    </section>
+</section>
 {% endblock %}

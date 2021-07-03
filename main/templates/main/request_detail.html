@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- 본문내용 -->
+<section id="main">
+  <div class="container" style="font-family:  'Do Hyeon', sans-serif; ">
+
+    <!-- Content -->
+    <div id="content" style="margin-top: 150px;">
+      <!-- Post -->
+      <article class="box post">
+        <header>
+          <h1> <strong>{{board.title}}</strong></h1><br />
+        </header>
+
+        작성자 : {{board.writer}}<br>
+        날짜 : {{board.date}}<br>
+        <hr>
+        <p>노래제목 : {{board.song}}</p>
+        <p>가수 : {{board.singer}}</p>
+        <p>비고 : {{board.extra}}</p>
+        
+        <hr>
+
+        {% if user == board.writer %}
+        <ul class="actions" >
+          <li><a href="{% url 'main:request_edit' board.id %}" class="button">수정</a></li>
+          <li><a href="{% url 'main:request_delete' board.id %}" class="button">삭제</a>
+            <li><a href="{% url 'main:board' %}" class="button">목록으로 돌아가기</a>
+          </li>
+        </ul>
+        {% endif %}
+       
+
+        
+  </div>
+</section>
+
+{% endblock %}

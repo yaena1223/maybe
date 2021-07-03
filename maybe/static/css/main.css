@@ -65,12 +65,6 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-}
 
 /* Basic */
 
@@ -175,7 +169,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		
 		color: #ffffff;
 		text-decoration: none;
 	}
@@ -2249,84 +2243,6 @@ input, select, textarea {
 		padding: 0.75em 1em;
 	}
 
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			color: #ffffff;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			text-transform: none;
-			letter-spacing: 0;
-			font-weight: 300;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				display: inline-block;
-				font-style: normal;
-				font-variant: normal;
-				text-rendering: auto;
-				line-height: 1;
-				text-transform: none !important;
-				font-family: 'Font Awesome 5 Free';
-				font-weight: 900;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				background: rgba(255, 255, 255, 0.025);
-				border-radius: 5px;
-				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '';
-				display: inline-block;
-				font-size: 0.8em;
-				height: 2.0625em;
-				left: 0;
-				line-height: 2.0625em;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 2.0625em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			background: #ffffff;
-			border-color: #ffffff;
-			content: '\f00c';
-			color: #2e3141;
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			border-color: #4c5c96;
-		}
-
-	input[type="checkbox"] + label:before {
-		border-radius: 5px;
-	}
-
 	input[type="radio"] + label:before {
 		border-radius: 100%;
 	}
@@ -2372,42 +2288,6 @@ input, select, textarea {
 			padding: 0;
 		}
 
-/* Icon */
-
-	.icon {
-		text-decoration: none;
-		border-bottom: none;
-		position: relative;
-	}
-
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon > .label {
-			display: none;
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
 
 /* Image */
 
@@ -2856,7 +2736,7 @@ input, select, textarea {
 	button,
 	.button {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+
 		-ms-appearance: none;
 		appearance: none;
 		-moz-transition: background-color 0.2s ease-in-out;
@@ -3253,10 +3133,7 @@ input, select, textarea {
 		-webkit-transition: opacity 0.35s ease, visibility 0.35s;
 		-ms-transition: opacity 0.35s ease, visibility 0.35s;
 		transition: opacity 0.35s ease, visibility 0.35s;
-		-moz-user-select: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
+
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		background: rgba(46, 49, 65, 0.8);
 		cursor: default;
@@ -4425,7 +4302,7 @@ input, select, textarea {
 	display:inline-block;
 	vertical-align: top;
     color:black;
-    width:400px; 
+    width:430px; 
     height:500px;
     padding: 10px;
     text-align: center;
@@ -4436,7 +4313,7 @@ input, select, textarea {
 	display:inline-block;
 	vertical-align: top;
     color:black;
-    width:400px; 
+    width:430px; 
     height:700px;
     padding: 10px;
     text-align: center;
@@ -4460,3 +4337,18 @@ input, select, textarea {
 	 margin-left: 20px;
 	 font-family:  'Do Hyeon', sans-serif;
   }
+
+  #new{
+	font-family:  'Do Hyeon', sans-serif;
+	font-size: 25px;
+  }
+#board{
+	font-family:  'Do Hyeon', sans-serif;
+	font-weight: 100;
+	font-size: 22px;
+}
+
+.authentication{
+	margin-top: 150px;
+	text-align: center;
+}
