@@ -3,17 +3,7 @@
 {% load static %}
 
 {% block content %}
-<script language="javascript">
-
-    function getSelectValue(frm)
-    {
-     frm.textValue.value = frm.selectBox.options[frm.selectBox.selectedIndex].text;
-     frm.optionValue.value = frm.selectBox.options[frm.selectBox.selectedIndex].value;
-    }
-</script>
-
 <div id = 'page-wrapper'>
-
     <!-- Wrapper -->
     <section id="wrapper">
         <header>
@@ -22,7 +12,6 @@
             </div>
         </header>
     </section>
-
     <div class="content_second_select">
         <select class="content_second_selects" name="my_min" id="my_min">
             <option value="">나의 최저 음정</option>
@@ -41,46 +30,44 @@
             <option value="13">1옥타브 라</option>
             <option value="14">1옥타브 시</option>
         </select>
-
         <br>
-
         <select class="content_second_selects" name="my_max" id="my_max">
             <option value="">나의 최고 음정</option>
-            <option value="1">1옥타브 도</option>
-            <option value="2">1옥타브 레</option>
-            <option value="3">1옥타브 미</option>
-            <option value="4">1옥타브 파</option>
-            <option value="5">1옥타브 솔</option>
-            <option value="6">1옥타브 라</option>
-            <option value="7">1옥타브 시</option>
-            <option value="8">2옥타브 도</option>
-            <option value="9">2옥타브 레</option>
-            <option value="10">2옥타브 미</option>
-            <option value="11">2옥타브 파</option>
-            <option value="12">2옥타브 솔</option>
-            <option value="13">2옥타브 라</option>
-            <option value="14">2옥타브 시</option>
-            <option value="15">3옥타브 도</option>
-            <option value="16">3옥타브 레</option>
-            <option value="17">3옥타브 미</option>
-            <option value="18">3옥타브 파</option>
-            <option value="19">3옥타브 솔</option>
-            <option value="20">3옥타브 라</option>
-            <option value="21">3옥타브 시</option>
+            <option value="8">1옥타브 도</option>
+			<option value="9">1옥타브 레</option>
+			<option value="10">1옥타브 미</option>
+			<option value="11">1옥타브 파</option>
+            <option value="12">1옥타브 솔</option>
+            <option value="13">1옥타브 라</option>
+            <option value="14">1옥타브 시</option>
+            <option value="15">2옥타브 도</option>
+            <option value="16">2옥타브 레</option>
+            <option value="17">2옥타브 미</option>
+            <option value="18">2옥타브 파</option>
+            <option value="19">2옥타브 솔</option>
+            <option value="20">2옥타브 라</option>
+            <option value="21">2옥타브 시</option>
+            <option value="22">3옥타브 도</option>
+            <option value="23">3옥타브 레</option>
+            <option value="24">3옥타브 미</option>
+            <option value="25">3옥타브 파</option>
+            <option value="26">3옥타브 솔</option>
+            <option value="27">3옥타브 라</option>
+            <option value="28">3옥타브 시</option>
         </select>
     <br>
     <form name="form">
-        <select class="content_second_selects" name="selectBox" id="selectBox" onChange="getSelectValue(this.form);">
+        <select class="content_second_selects" name="chosen_song" id="chosen_song">
             <option value="">부르고 싶은 노래</option>
-            <option value="">마크튭&구윤회 - Marry Me</option>
-            <option value="">aespa - NEXT LEVEL</option>
-            <option value="">MC THE MAX - One Love</option>
-            <option value="">SG워너비 - Timeless</option>
-            <option value="">이예준 - 그 날에 나는 맘이 편했을까</option>
-            <option value="">하동균 - 그녀를 사랑해줘요</option>
-            <option value="">한동근 - 그대라는 사치</option>
-            <option value="">이석훈 - 그대를 사랑하는 10가지 이유</option>
-            <option value="">하동균 & 이정 - 기다릴게</option>
+            <option value="Marry Me">마크튭&구윤회 - Marry Me</option>
+            <option value="NEXT LEVEL">aespa - NEXT LEVEL</option>
+            <option value="One Love">MC THE MAX - One Love</option>
+            <option value="Timeless">SG워너비 - Timeless</option>
+            <option value="그 날에 나는 맘이 편했을까">이예준 - 그 날에 나는 맘이 편했을까</option>
+            <option value="그녀를 사랑해줘요">하동균 - 그녀를 사랑해줘요</option>
+            <option value="그대라는 사치">한동근 - 그대라는 사치</option>
+            <option value="그대를 사랑하는 10가지 이유">이석훈 - 그대를 사랑하는 10가지 이유</option>
+            <option value="기다릴게">하동균 & 이정 - 기다릴게</option>
             <option value="">이루 - 까만안경</option>
             <option value="">에이치코드(feat.전상근) - 꿈속에 너</option>
             <option value="">허각 - 나를 사랑했던 사람아</option>
@@ -124,23 +111,17 @@
             <option value="">노라조 - 형</option>
             <option value="">안예은 - 홍연</option>
         </select>
-        <br><br><br>
-        당신이 부르고 싶은 노래는<br><br><input class="want_song" type="text" name="textValue" width="10">
     </form>
-        
-        <br><br>
-
-
+        <br>
         <button id = 'btn-change-text'>검사</button>
         <br><br><br><br>
-        <p id='special'></p>
-
-
+        <p id='special'>나의 음정은?</p>
+        <p id='normal'>노래의 음정은?</p>
+        <div class="want_song">당신이 부르고 싶은 노래는?</div>
+        <br>
+        <div class="result_boolean">검사 결과는?</div>
+        <br>
+        <div class="result_detail">결과 분석</div>
     </div>
-
 </div>
-
-
-
-
 {% endblock %}
