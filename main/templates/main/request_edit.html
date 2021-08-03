@@ -11,20 +11,15 @@
 
         <!-- Content -->
         <div id="content" style="margin-top: 150px;">
-
             <!-- Post -->
-         
                 <header>
                     <p style="font-family: 'Do Hyeon', sans-serif;font-size: 40px;"> 게시글 수정하기</p>
                     <hr>
                 </header>
                 <div>
-
                     <form action="{%url 'main:request_update' board.id %}" method="POST"
                         enctype="multipart/form-data">
                         {%csrf_token%}
-
-                     
                         <!-- 질문 내용작성부분 -->
                         <p>노래 : <input type="text" name="singer" value="{{board.singer}}"></p>
                         <p>가수 : <input type="text" name="song" value="{{board.song}}"></p>
@@ -32,7 +27,6 @@
                         </p>
                         <button type="submit">제출</button>
                     </form>
-
         </div>
     </div>
 </section>
