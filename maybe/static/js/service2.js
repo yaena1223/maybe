@@ -113,16 +113,17 @@ const totalSongList = [
 ]
 
 btn.addEventListener('click',function(){
-  special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
+  // special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
+  special.innerHTML = `나의 최저음정: ${myMin.value} / 나의 최고 음정: ${myMax.value}`;
   const myMinCompare = parseInt(myMin.value);
   const myMaxCompare = parseInt(myMax.value);
   for (let index = 0; index < totalSongList.length; index++) {
     const element = totalSongList[index];
     if(element.name === chosenSong.value){//이름 일치하면
       //노래의 음정 출력(숫자로)
-      normal.innerHTML = "노래의 최저음정: " + element.min +" / 노래의 최고 음정: " + element.max;
+      normal.innerHTML = `노래의 최저음정: ${element.min} / 노래의 최고 음정: ${element.max}`;
       //당신이 선택한 노래는 (가수)의 (제목)입니다.
-      wantSong.innerText = "당신이 부르고 싶은 노래는 " + element.singer + "의 " + element.name + "입니다."
+      wantSong.innerText = `당신이 부르고 싶은 노래는 ${element.singer}의 ${element.name}입니다.`;
       //부를수 있는지 없는지 판정
       element.min = parseInt(element.min);
       element.max = parseInt(element.max);
@@ -133,13 +134,13 @@ btn.addEventListener('click',function(){
       else{
         resultBoolean.innerText = "아쉽게도 당신은 이 노래를 소화하기 어렵습니다.";
         if(myMinCompare > element.min){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (myMinCompare - element.min) + "음정 더 낮게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(myMinCompare - element.min)}음정 더 낮게 부를 수 있어야 합니다.`;
         }
         if(myMaxCompare < element.max){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (element.max - myMaxCompare) + "음정 더 높게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(element.max - myMaxCompare)}음정 더 높게 부를 수 있어야 합니다.`;
         }
         if(myMinCompare > element.min && myMaxCompare < element.max){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (myMinCompare - element.min) + "음정 더 낮게, " + (element.max - myMaxCompare) + "음정 더 높게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(myMinCompare - element.min)}음정 더 낮게, ${(element.max - myMaxCompare)}음정 더 높게 부를 수 있어야 합니다.`;
         }
       }
     }
