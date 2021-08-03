@@ -269,12 +269,12 @@ input::-moz-focus-inner {
 		}
 
 		h1 {
-			font-size: 3em;
+			font-size: 4em;
 			font-family:  'Do Hyeon', sans-serif;
 		 }
 	  
 		 h2 {
-			font-size: 1.8em;
+			font-size: 1.5em;
 		 }
 	  
 		 h3 {
@@ -282,11 +282,11 @@ input::-moz-focus-inner {
 		 }
 	  
 		 h4 {
-			font-size: 1.5em;
+			font-size: 1.3em;
 		 }
 	  
 		 h5 {
-			font-size: 0.75em;
+			font-size: 0.8em;
 		 }
 	  
 		 h6 {
@@ -4300,6 +4300,8 @@ input::-moz-focus-inner {
    font-weight: 100;
 }
 
+
+
 .level{
 	text-align: center;
 }
@@ -4389,3 +4391,7 @@ input::-moz-focus-inner {
 	font-size: 20px;
   }
 
+.title{
+	margin-top:15%;
+	position:relative;
+}
