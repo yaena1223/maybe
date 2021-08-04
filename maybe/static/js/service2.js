@@ -552,7 +552,8 @@ const totalSongList = [
   }
 ]
 
-btn.addEventListener('click',function(){
+btn.addEventListener('click',service2)
+function service2(){
   special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
   const myMinCompare = parseInt(myMin.value);
   const myMaxCompare = parseInt(myMax.value);
@@ -584,14 +585,4 @@ btn.addEventListener('click',function(){
       }
     }
   }
-});
-
-/*Service 3*/
-//for문 사용
-//만약 myMinCompare <= totalSongList[index].min && myMaxCompare >= totalSongList[index].max라면(부를 수 있다면)
-//해당 노래를 캐러셀에 추가 by <img src="{% static 'images/songs/그녀를사랑해줘요.jpeg' %}" class="d-block w-100" alt="...">를 추가
-//세부 방식 나중에 다시 고민
-const button = document.querySelector("#button1");
-button.addEventListener("click", showList);
-const carouselIndicators = document.querySelector(".carousel-indicators");
-const carouselItem = document.querySelector(".carousel-item");
+};
