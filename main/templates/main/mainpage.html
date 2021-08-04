@@ -16,8 +16,8 @@
 
         </style>
     <div class="title">
-        <h1 style="text-align:center">2021 보컬 특강</h1><hr>
-        <h4 style="text-align:center">-음정부터 노래까지 쓰앵님이 알려줄게-</h4>
+        <h1 style="text-align:center" id = "main_title">2021 보컬 특강</h1><hr>
+        <h4 style="text-align:center"id = "main_explain">-음정부터 노래까지 쓰앵님이 알려줄게-</h4>
     </div>
 </div>
 </section>
@@ -30,7 +30,7 @@
             <div class="inner">
                 <a href="{% url 'main:service1' %}" class="image"><img src="{% static 'images/check.png'%}"  alt=""/></a>
                 <div class="content">
-                    <h2 id="title1" ><i class="fas fa-microphone fa-lg"> <font size="6">제 1강 : 10초 안에 내 음역대 찾기</font></i></h2>
+                    <h2 id="service_title"><i class="fas fa-microphone fa-lg"></i> 제 1강 : 10초 안에 내 음역대 찾기</h2>
                     <hr>
                     <p id = 'title1'>내 음정이 무엇인지도 모른다면, 어떻게 노래를 부르겠는가!<br>
                     지피지기면 백전백승! 쓰앵님이 알려주는 음정 자가진단을 통해,<br>
@@ -38,7 +38,7 @@
                     <a href="{% url 'main:service1' %}" class="special">더보기</a>
                     <div class="star-ratings">
                         <div class="star-ratings-base space-x-2 text-lg">
-                            <h5><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 왜 여태까지 삑사리가 났는지 알겠어요 - 허x회<br>
+                            <h5 id = "title1"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 왜 여태까지 삑사리가 났는지 알겠어요 - 허x회<br>
                             <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span> 낮은 음역대의 충격으로 별 한개는 깎습니다...그래도 명강의 인정합니다! - 오x혁</h5>
                         </div>
                     </div>
@@ -52,17 +52,18 @@
             <div class="inner">
                 <a href="{% url 'main:service2'%}" class="image"><img src="{% static 'images/sing.png'%}" alt="" /></a>
                 <div class="content">
-                    <h2 id="title1"><i class="fas fa-music fa-lg"><font size="6"> 제 2강 : 원하는 노래, 부르는 법을 알아보자</font></i></h2>
+                    <h2 id="service_title"><i class="fas fa-music fa-lg"></i> 제 2강 : 원하는 노래, 부르는 법을 알아보자</h2>
                     <hr>
                     <p id = 'title1'>
                     아직도 부르고 싶은 노래를 소화할 자신이 없어 눈치를 보는가?<br>
                     1강에서 본인의 음정만 파악했다면, 더 이상 고민할 필요가 없다.<br>
-                    내가 원하는 노래를 부를 수 있는지 판단하고, 불가능하다면 적합한 키 조절법을 파악해 보자!<br></p>
+                    내가 원하는 노래를 부를 수 있는지 판단하고,<br>
+                    불가능하다면 적합한 키 조절법을 파악해 보자!<br></p>
                     <a href="{% url 'main:service2'%}" class="special">더보기</a>
                     <div class="star-ratings">
                         <div class="star-ratings-base space-x-2 text-lg">
-                            <h5><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 휴 질풍가도 부르고 싶었는데 다행히 가능하네요...감사합니다! - 김x서<br>
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 낫띵베러 완곡이 목표입니다 네 키를 낮추라네요ㅎㅎ두 키까지 도전해볼게요! - 이x회</h5>
+                            <h5 id = "title1"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 휴 질풍가도 부르고 싶었는데 다행히 가능하네요...감사합니다! - 김x서<br>
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 낫띵베러 완곡이 목표입니다 네 키를 낮추라네요~두 키까지 도전해볼게요! - 이x회</h5>
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
             <div class="inner">
                 <a href="{% url 'main:service3'%}" class="image"><img src="{% static 'images/song.png'%}" alt="" /></a>
                 <div class="content">
-                    <h2 id="title1" ><i class="fas fa-volume-up  fa-lg"> <font size="6">제 3강 : 쓰앵님이 추천하는 너의 노래는?</font></i></h2>
+                    <h2 id="service_title"><i class="fas fa-volume-up  fa-lg"></i> 제 3강 : 쓰앵님이 추천하는 너의 노래는?</h2>
                     <hr>
                     <p id = 'title1'>한치의 의심도 하지마,<br>
                     네게 맞는 음정과 노래 쓰앵님은 다 아니까.<br>
@@ -82,8 +83,8 @@
                     <a href="{% url 'main:service3'%}" class="special">더보기</a>
                     <div class="star-ratings">
                         <div class="star-ratings-base space-x-2 text-lg">
-                        <h5><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span> 노래 부르기 전부터 음 낮출 생각만 하는 분들은 꼭 들으세요! - 신x섭<br>
-                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 고음부터 저음까지 딱맞는 걸 느끼면서 자신감도 실력도 올랐습니다. - 윤x이</h5>
+                        <h5 id = "title1"><span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span> 노래 부르기 전부터 음 낮출 생각만 하는 분들은 꼭 들으세요! - 신x섭<br>
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span> 고음부터 저음까지 딱맞는 걸 느끼면서 자신감도 실력도 올랐습니다! - 이x나</h5>
                         </div>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
             <div class="inner">
                 <a href="{% url 'main:board'%}" class="image"><img src="{% static 'images/add.png' %}" alt=""/></a>
                 <div class="content">
-                    <h2 id="title1" ><i class="fas fa-clipboard fa-lg"> <font size="6">제 4강 : 노래요청 게시판</font></i></h2>
+                    <h2 id="service_title"><i class="fas fa-clipboard fa-lg"></i> 제 4강 : 노래요청 게시판</h2>
                     <hr>
                     <p id = 'title1'>신규 음원 요청을 받습니다. <br>
                         없어서 아쉬운 노래를 요청해 주시면 쓰앵님과 조교들이 성심 성의껏 답변해 드립니다.<br>
