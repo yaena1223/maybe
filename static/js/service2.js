@@ -47,6 +47,8 @@ const totalSongList = [
     max: "15",
     min_name: "0옥타브 솔",
     max_name: "2옥타브 도",
+    youtube: "https://www.youtube.com/results?search_query=Marry+me",
+    image_name: "marryme",
   },
   {
     name: "NEXT LEVEL",
@@ -55,6 +57,8 @@ const totalSongList = [
     max: "25",
     min_name: "0옥타브 시",
     max_name: "3옥타브 파",
+    youtube: "https://www.youtube.com/results?search_query=NEXT+LEVEL",
+    image_name: "nextlevel",
   },
   {
     name: "One Love",
@@ -63,6 +67,8 @@ const totalSongList = [
     max: "24",
     min_name: "0옥타브 라",
     max_name: "3옥타브 미",
+    youtube: "https://www.youtube.com/results?search_query=One+Love",
+    image_name: "onelove",
   },
   {
     name: "Timeless",
@@ -71,58 +77,74 @@ const totalSongList = [
     max: "16",
     min_name: "0옥타브 라",
     max_name: "2옥타브 레",
+    youtube: "https://www.youtube.com/results?search_query=Timeless",
+    image_name: "timeless",
   },
   {
-    name: "그 날에 나는 맘이 편했을까L",
+    name: "그 날에 나는 맘이 편했을까",
     singer: "이예준",
     min: "6",
     max: "16",
     min_name: "0옥타브 라",
     max_name: "2옥타브 레",
+    youtube: "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%82%A0%EC%97%90+%EB%82%98%EB%8A%94+%EB%A7%98%EC%9D%B4+%ED%8E%B8%ED%96%88%EC%9D%84%EA%B9%8C",
+    image_name: "그날에나는맘이편했을까",
   },
   {
     name: "윤회1",
     singer: "You",
     min: "3",
     max: "22",
+    youtube: "https://www.youtube.com/results?search_query=윤회1",
+    image_name: "nextlevel",
   },
   {
     name: "윤회2",
     singer: "You",
     min: "3",
     max: "22",
+    youtube: "https://www.youtube.com/results?search_query=윤회2",
+    image_name: "nextlevel",
   },
   {
     name: "윤회3",
     singer: "You",
     min: "3",
     max: "22",
+    youtube: "https://www.youtube.com/results?search_query=윤회3",
+    image_name: "nextlevel",
   },
   {
     name: "윤회4",
     singer: "You",
     min: "3",
     max: "22",
+    youtube: "https://www.youtube.com/results?search_query=윤회4",
+    image_name: "nextlevel",
   },
   {
     name: "윤회5",
     singer: "You",
     min: "3",
     max: "22",
+    youtube: "https://www.youtube.com/results?search_query=윤회5",
+    image_name: "nextlevel",
   }
 ]
 
-btn.addEventListener('click',function(){
-  special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
+btn.addEventListener("click", service2);
+function service2(){
+  // special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
+  special.innerHTML = `나의 최저음정: ${myMin.value} / 나의 최고 음정: ${myMax.value}`;
   const myMinCompare = parseInt(myMin.value);
   const myMaxCompare = parseInt(myMax.value);
   for (let index = 0; index < totalSongList.length; index++) {
     const element = totalSongList[index];
     if(element.name === chosenSong.value){//이름 일치하면
       //노래의 음정 출력(숫자로)
-      normal.innerHTML = "노래의 최저음정: " + element.min +" / 노래의 최고 음정: " + element.max;
+      normal.innerHTML = `노래의 최저음정: ${element.min} / 노래의 최고 음정: ${element.max}`;
       //당신이 선택한 노래는 (가수)의 (제목)입니다.
-      wantSong.innerText = "당신이 부르고 싶은 노래는 " + element.singer + "의 " + element.name + "입니다."
+      wantSong.innerText = `당신이 부르고 싶은 노래는 ${element.singer}의 ${element.name}입니다.`;
       //부를수 있는지 없는지 판정
       element.min = parseInt(element.min);
       element.max = parseInt(element.max);
@@ -133,25 +155,16 @@ btn.addEventListener('click',function(){
       else{
         resultBoolean.innerText = "아쉽게도 당신은 이 노래를 소화하기 어렵습니다.";
         if(myMinCompare > element.min){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (myMinCompare - element.min) + "음정 더 낮게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(myMinCompare - element.min)}음정 더 낮게 부를 수 있어야 합니다.`;
         }
         if(myMaxCompare < element.max){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (element.max - myMaxCompare) + "음정 더 높게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(element.max - myMaxCompare)}음정 더 높게 부를 수 있어야 합니다.`;
         }
         if(myMinCompare > element.min && myMaxCompare < element.max){
-          resultDetail.innerText = "이 노래를 소화하기 위해서는 " + (myMinCompare - element.min) + "음정 더 낮게, " + (element.max - myMaxCompare) + "음정 더 높게 부를 수 있어야 합니다."
+          resultDetail.innerText = `이 노래를 소화하기 위해서는 ${(myMinCompare - element.min)}음정 더 낮게, ${(element.max - myMaxCompare)}음정 더 높게 부를 수 있어야 합니다.`;
         }
       }
     }
   }
-});
+};
 
-/*Service 3*/
-//for문 사용
-//만약 myMinCompare <= totalSongList[index].min && myMaxCompare >= totalSongList[index].max라면(부를 수 있다면)
-//해당 노래를 캐러셀에 추가 by <img src="{% static 'images/songs/그녀를사랑해줘요.jpeg' %}" class="d-block w-100" alt="...">를 추가
-//세부 방식 나중에 다시 고민
-const button = document.querySelector("#button1");
-button.addEventListener("click", showList);
-const carouselIndicators = document.querySelector(".carousel-indicators");
-const carouselItem = document.querySelector(".carousel-item");
