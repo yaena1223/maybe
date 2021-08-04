@@ -3,6 +3,12 @@
 {% load static %}
 
 {% block content %}
+<style>
+  .nav_lecture{
+      visibility:hidden;
+  }
+</style>
+
 <div id = 'page-wrapper'>
     <!-- Wrapper -->
     <section id="wrapper">
@@ -112,16 +118,30 @@
             <option value="">안예은 - 홍연</option>
         </select>
     </form>
+    
         <br>
         <button id = 'btn-change-text'>검사</button>
         <br><br><br><br>
-        <p id='special'>나의 음정은?</p>
-        <p id='normal'>노래의 음정은?</p>
-        <div class="want_song">당신이 부르고 싶은 노래는?</div>
-        <br>
-        <div class="result_boolean">검사 결과는?</div>
-        <br>
-        <div class="result_detail">결과 분석</div>
+
+        <div class = "music">
+            <img class = "music_img" src = "{% static 'images/music.png'%}">
+            <div class="want_song">당신이 선택한 노래는?</div>
+        </div>
+        <hr>
+
+        <div class = "play">
+            <img class = "play_img" src = "{% static 'images/play.png'%}">
+            <p id='normal'>당신이 부르고 싶은 노래의 음정은?</p>
+            <p id='special'>얄루</p>
+        </div>
+        <hr>
+
+        <div>
+            <img class = "mic" src = "{% static 'images/mic.png'%}">
+            <div class="result_boolean">노래의 가창 가능여부를 알려줍니다.</div>
+            <br>
+            <div class="result_detail">얄루</div>
+        </div>
+
     </div>
 </div>
-{% endblock %}

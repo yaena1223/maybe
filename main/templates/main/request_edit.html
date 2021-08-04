@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<style>
+  .nav_lecture{
+      visibility:hidden;
+  }
+</style>
+
 
 
 <!-- 본문내용 -->
@@ -21,8 +27,8 @@
                         enctype="multipart/form-data">
                         {%csrf_token%}
                         <!-- 질문 내용작성부분 -->
-                        <p>노래 : <input type="text" name="singer" value="{{board.singer}}"></p>
-                        <p>가수 : <input type="text" name="song" value="{{board.song}}"></p>
+                        <p>노래 : <input type="text" name="song" value="{{board.song}}"></p>
+                        <p>가수 : <input type="text" name="singer" value="{{board.singer}}"></p>
                         <p>비고 : <textarea type="text" name="extra" id="" cols="30" rows="10">{{board.extra}}</textarea>
                         </p>
                         <button type="submit">제출</button>

@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<style>
+  .nav_lecture{
+      visibility:hidden;
+  }
+</style>
+
 
 <!-- 본문내용 -->
 <section id="main">
@@ -10,7 +16,6 @@
     <div id="content" style="margin-top: 150px;">
       <!-- Post -->
       <article class="box post">
-
         작성자 : {{board.writer}}<br>
         날짜 : {{board.date}}<br>
         <hr>
