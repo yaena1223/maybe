@@ -1,6 +1,13 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
-
+@font-face {
+	font-family: 'ablack';
+	src: url("../font/ablack.OTF") format('opentype') ;
+}
+@font-face {
+	font-family: 'dream4';
+	src: url("../font/dream4.OTF") format('opentype') ;
+}
 /*
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
@@ -269,12 +276,12 @@ input::-moz-focus-inner {
 		}
 
 		h1 {
-			font-size: 3em;
+			font-size: 4em;
 			font-family:  'Do Hyeon', sans-serif;
 		 }
 	  
 		 h2 {
-			font-size: 1.8em;
+			font-size: 1.5em;
 		 }
 	  
 		 h3 {
@@ -282,11 +289,11 @@ input::-moz-focus-inner {
 		 }
 	  
 		 h4 {
-			font-size: 1.5em;
+			font-size: 1.3em;
 		 }
 	  
 		 h5 {
-			font-size: 0.75em;
+			font-size: 0.8em;
 		 }
 	  
 		 h6 {
@@ -4296,9 +4303,11 @@ input::-moz-focus-inner {
       }
 
 #title1{
-   font-family:  'Do Hyeon', sans-serif;
-   font-weight: 100;
+   font-family:  'dream4', sans-serif;
+   font-weight: initial;
 }
+
+
 
 .level{
 	text-align: center;
@@ -4308,7 +4317,7 @@ input::-moz-focus-inner {
 	vertical-align: top;
     color:black;
     width:430px; 
-    height:500px;
+    height:530px;
     padding: 10px;
     text-align: center;
     box-sizing:border-box;    
@@ -4322,7 +4331,7 @@ input::-moz-focus-inner {
     height:700px;
     padding: 10px;
     text-align: center;
-    box-sizing:border-box;    
+    box-sizing:border-box;   
 
 }
 .level1,.level1_high{
@@ -4389,3 +4398,27 @@ input::-moz-focus-inner {
 	font-size: 20px;
   }
 
+.title{
+	margin-top:15%;
+	position:relative;
+}
+
+#main_title{
+	font-family: ablack;
+	font-weight :initial;
+}
+
+#main_explain{
+	font-family: dream4;
+}
+
+#service_title{
+	font-family: ablack !important;
+	font-weight :initial;
+}
+
+#level{
+	font-size: 50px;
+	font-weight: initial;
+	margin: 0%;
+}
