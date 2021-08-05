@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+<style>
+  .nav_lecture{
+      visibility:hidden;
+  }
+</style>
 
 <section id="main">
     <div class="container">
@@ -31,6 +36,7 @@
                             <td><a href="{% url 'main:request_detail' board.id %}">{{board.song}}</a></td>
                             <td>{{board.singer}}</td>
                             <td>{{board.writer}}</td>
+                            <br>
                             <td>{{board.date}}</td>
                         </tr>
                         {% endfor %}

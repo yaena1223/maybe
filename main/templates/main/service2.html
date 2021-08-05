@@ -3,6 +3,12 @@
 {% load static %}
 
 {% block content %}
+<style>
+  .nav_lecture{
+      visibility:hidden;
+  }
+</style>
+
 <div id = 'page-wrapper'>
     <!-- Wrapper -->
     <section id="wrapper">
@@ -68,60 +74,75 @@
             <option value="그대라는 사치">한동근 - 그대라는 사치</option>
             <option value="그대를 사랑하는 10가지 이유">이석훈 - 그대를 사랑하는 10가지 이유</option>
             <option value="기다릴게">하동균 & 이정 - 기다릴게</option>
-            <option value="">이루 - 까만안경</option>
-            <option value="">에이치코드(feat.전상근) - 꿈속에 너</option>
-            <option value="">허각 - 나를 사랑했던 사람아</option>
-            <option value="">SG워너비 - 내 사람</option>
-            <option value="">IU - 내 손을 잡아(최고의 사랑 OST)</option>
-            <option value="">폴킴 - 너를 만나</option>
-            <option value="">정승환 - 너였다면(또 오해영 OST)</option>
-            <option value="">성시경 - 너의 모든 순간(별에서 온 그대 OST)</option>
-            <option value="">#안녕(prod.영화처럼) - 너의 번호를 누르고</option>
-            <option value="">장범준 - 노래방에서</option>
-            <option value="">V.O.S - 다시 만날까봐</option>
-            <option value="">SG워너비 - 라라라</option>
-            <option value="">브레이브걸스 - 롤린(Rollin')</option>
-            <option value="">폴킴 - 모든 날, 모든 순간</option>
-            <option value="">송이한 - 밝게 빛나는 별이 되어 비춰줄게</option>
-            <option value="">브라운 아이즈 - 벌써 일년</option>
-            <option value="">태연 - 사계</option>
-            <option value="">먼데이키즈 - 사랑이 식었다고 말해도 돼</option>
-            <option value="">이승기 - 삭제</option>
-            <option value="">SG워너비 - 살다가</option>
-            <option value="">MSG워너비 - 상상더하기</option>
-            <option value="">임창정 - 소주 한 잔</option>
-            <option value="">10cm - 스토커</option>
-            <option value="">아무진 - 스토커</option>
-            <option value="">조정석 - 아로하(슬기로운 의사생활 OST)</option>
-            <option value="">정준일 - 안아줘</option>
-            <option value="">박효신 - 야생화</option>
-            <option value="">MC THE MAX - 어디에도</option>
-            <option value="">스탠딩에그 - 오래된 노래</option>
-            <option value="">신예영 - 우리 왜 헤어져야 해</option>
-            <option value="">izi - 응급실(쾌걸춘향 OST)</option>
-            <option value="">야다 - 이미 슬픈 사랑</option>
-            <option value="">임재현 - 조금 취했어</option>
-            <option value="">윤종신 - 좋니</option>
-            <option value="">닐로 - 지나오다</option>
-            <option value="">에일리 - 첫눈처럼 너에게 가겠다</option>
-            <option value="">빅마다 - 체념</option>
-            <option value="">정동하 - 추억은 만남보다 이별에 남아</option>
-            <option value="">전우성 - 축가</option>
-            <option value="">황인욱 - 포장마차</option>
-            <option value="">노라조 - 형</option>
-            <option value="">안예은 - 홍연</option>
+            <option value="까만안경">이루 - 까만안경</option>
+            <option value="꿈속에 너">에이치코드(feat.전상근) - 꿈속에 너</option>
+            <option value="나를 사랑했던 사람아">허각 - 나를 사랑했던 사람아</option>
+            <option value="내 사람">SG워너비 - 내 사람</option>
+            <option value="내 손을 잡아(최고의 사랑 OST)">IU - 내 손을 잡아(최고의 사랑 OST)</option>
+            <option value="너를 만나">폴킴 - 너를 만나</option>
+            <option value="너였다면(또 오해영 OST)">정승환 - 너였다면(또 오해영 OST)</option>
+            <option value="너의 모든 순간(별에서 온 그대 OST)">성시경 - 너의 모든 순간(별에서 온 그대 OST)</option>
+            <option value="너의 번호를 누르고">#안녕(prod.영화처럼) - 너의 번호를 누르고</option>
+            <option value="노래방에서">장범준 - 노래방에서</option>
+            <option value="다시 만날까봐">V.O.S - 다시 만날까봐</option>
+            <option value="라라라">SG워너비 - 라라라</option>
+            <option value="롤린(Rollin')">브레이브걸스 - 롤린(Rollin')</option>
+            <option value="모든 날, 모든 순간">폴킴 - 모든 날, 모든 순간</option>
+            <option value="밝게 빛나는 별이 되어 비춰줄게">송이한 - 밝게 빛나는 별이 되어 비춰줄게</option>
+            <option value="벌써 일년">브라운 아이즈 - 벌써 일년</option>
+            <option value="사계">태연 - 사계</option>
+            <option value="사랑이 식었다고 말해도 돼">먼데이키즈 - 사랑이 식었다고 말해도 돼</option>
+            <option value="삭제">이승기 - 삭제</option>
+            <option value="살다가">SG워너비 - 살다가</option>
+            <option value="상상더하기">MSG워너비 - 상상더하기</option>
+            <option value="소주 한 잔">임창정 - 소주 한 잔</option>
+            <option value="스토커">10cm - 스토커</option>
+            <option value="신호등">이무진 - 신호등</option>
+            <option value="아로하(슬기로운 의사생활 OST)">조정석 - 아로하(슬기로운 의사생활 OST)</option>
+            <option value="안아줘">정준일 - 안아줘</option>
+            <option value="야생화">박효신 - 야생화</option>
+            <option value="어디에도">MC THE MAX - 어디에도</option>
+            <option value="오래된 노래">스탠딩에그 - 오래된 노래</option>
+            <option value="우리 왜 헤어져야 해">신예영 - 우리 왜 헤어져야 해</option>
+            <option value="응급실(쾌걸춘향 OST)">izi - 응급실(쾌걸춘향 OST)</option>
+            <option value="이미 슬픈 사랑">야다 - 이미 슬픈 사랑</option>
+            <option value="조금 취했어">임재현 - 조금 취했어</option>
+            <option value="좋니">윤종신 - 좋니</option>
+            <option value="지나오다">닐로 - 지나오다</option>
+            <option value="첫눈처럼 너에게 가겠다">에일리 - 첫눈처럼 너에게 가겠다</option>
+            <option value="체념">빅마다 - 체념</option>
+            <option value="추억은 만남보다 이별에 남아">정동하 - 추억은 만남보다 이별에 남아</option>
+            <option value="축가">전우성 - 축가</option>
+            <option value="포장마차">황인욱 - 포장마차</option>
+            <option value="형">노라조 - 형</option>
+            <option value="홍연">안예은 - 홍연</option>
         </select>
     </form>
+    
         <br>
         <button id = 'btn-change-text'>검사</button>
         <br><br><br><br>
-        <p id='special'>나의 음정은?</p>
-        <p id='normal'>노래의 음정은?</p>
-        <div class="want_song">당신이 부르고 싶은 노래는?</div>
-        <br>
-        <div class="result_boolean">검사 결과는?</div>
-        <br>
-        <div class="result_detail">결과 분석</div>
+
+        <div class = "music">
+            <img class = "music_img" src = "{% static 'images/music.png'%}">
+            <div class="want_song">당신이 선택한 노래는?</div>
+        </div>
+        <hr>
+
+        <div class = "play">
+            <img class = "play_img" src = "{% static 'images/play.png'%}">
+            <p id='normal'>당신이 부르고 싶은 노래의 음정은?</p>
+            <p id='special'>얄루</p>
+        </div>
+        <hr>
+
+        <div>
+            <img class = "mic" src = "{% static 'images/mic.png'%}">
+            <div class="result_boolean">노래의 가창 가능여부를 알려줍니다.</div>
+            <br>
+            <div class="result_detail">얄루</div>
+        </div>
+
     </div>
 </div>
 {% endblock %}

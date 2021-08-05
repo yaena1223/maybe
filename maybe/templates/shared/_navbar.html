@@ -2,10 +2,23 @@
 
     <!-- Header -->
         <header id="header">
-            <h1><a href="{% url 'main:showmain'%}">보컬특강</a></h1>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
+            <div>
+                <h1><a href="{% url 'main:showmain'%}">보컬특강</a></h1>
+            </div>
+            <div class = "nav_lecture">
+                <div class = "nav_lecture_move">
+                    <a><div class="nav_lecture_js"><a onclick="fnMove('one')">제 1강</a></div></a>
+                    <div class="nav_lecture_js"><a onclick="fnMove('two')">제 2강</a></div>
+                    <div class="nav_lecture_js"><a onclick="fnMove('three')">제 3강</a></div>
+                    <div class="nav_lecture_js"><a onclick="fnMove('four')">제 4강</a></div>
+                </div>
+            </div>
+
+            <div>
+                <nav>
+                    <a href="#menu">Menu</a>        
+                </nav>
+            </div>
         </header>
 
     <!-- Menu -->
@@ -20,6 +33,7 @@
                     <li><a href="{% url 'main:board'%}">노래 요청 게시판</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'account_logout'%}">로그아웃</a></li>
+                    <li><a href="{% url 'users:mypage' request.user.id %}">마이페이지</a></li>
                     {% else %}
                     <li><a href="{% url 'account_login'%}">로그인</a></li>
                     <li><a href="{% url 'account_signup'%}">회원가입</a></li>
