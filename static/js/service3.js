@@ -7,10 +7,26 @@
 const button = document.getElementById("button1");
 button.addEventListener("click", showList);
 
-let slideNumber = 1;
 const carouselIndicators = document.querySelector(".carousel-indicators");
 const carouselInner= document.querySelector(".carousel-inner");
 function showList(){
+    //carouselInner 초기화 작업
+    button.setAttribute("disabled", "disabled");
+    button.innerText = "새로고침 후 이용하세요";
+    button.style.marginLeft = "42%";
+    let slideNumber = 1;
+    // const initialIndicator = carouselIndicators.firstElementChild;
+    // const initialInner = carouselInner.firstElementChild;
+    // while (carouselInner.hasChildNodes()){
+    //     carouselInner.removeChild(carouselInner.firstChild); 
+    // }
+    // while(carouselIndicators.hasChildNodes()){
+    //     carouselIndicators.removeChild(carouselIndicators.firstChild);
+    // }
+    // initialInner.className += ' active';
+    // carouselIndicators.appendChild(initialIndicator);
+    // carouselInner.appendChild(initialInner);
+    //조건에 부합하는 carouselinner 추가 및 같은 수의 carouselIndicator 추가
     for (let index = 0; index < totalSongList.length; index++) {
         const element = totalSongList[index];
         const myMinCompare = parseInt(myMin.value);
@@ -40,13 +56,14 @@ function showList(){
             newImage.setAttribute('src', `/static/images/songs/${element.image_name}.jpeg`);
             newImage.setAttribute('alt', '...');
             newAnchor.appendChild(newImage);
-
-            console.log(carouselInner);
-            const imgSource = newImage.src;
-            console.log(imgSource);
-        }
-        else{
-            console.log(`아쉽게도 당신은 ${element.name}를 소화하기 어렵습니다.`);
         }
     }
+    moveToCarousel('carousel');
+    //console.log(carouselIndicators);
+    //console.log(carouselInner);
 };
+
+function moveToCarousel(seq){
+    var offset = $("." + seq).offset();
+    $('html, body').animate({scrollTop : offset.top + 200}, 100);
+}

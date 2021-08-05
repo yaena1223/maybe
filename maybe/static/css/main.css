@@ -4099,6 +4099,7 @@ input::-moz-focus-inner {
 }
 .carousel-inner{
 	text-align: center;
+	border: 3px solid white;
 }
 
 #my_min, #my_max{
