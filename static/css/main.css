@@ -3355,8 +3355,8 @@ input::-moz-focus-inner {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: url("{% static 'images/lecture.jpg'%}");
-				background-size: 100%,
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-size: auto,
  cover;
 				background-position: center,
  center;
@@ -3897,7 +3897,7 @@ input::-moz-focus-inner {
 /* Footer */
 
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
+	
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -4099,6 +4099,7 @@ input::-moz-focus-inner {
 }
 .carousel-inner{
 	text-align: center;
+	border: 3px solid white;
 }
 
 #my_min, #my_max{
@@ -4123,42 +4124,6 @@ input::-moz-focus-inner {
 #button1:focus + .carousel{
 	visibility: visible;
 }
-
-.audios{
-    display: flex;
-    justify-content: center;
-   }
-   .audios p{
-      display: flex;
-      align-items: center;
-      font-family: 'Do Hyeon', sans-serif;
-	  font-size: smaller;
-      color: white;
-   }
-   .content_second_select{
-      text-align: center;
-   }
-   h3{
-      text-align: center;
-   }
-   .song{
-      display: flex;
-      justify-content: center;
-      width: 450px;
-      height: 200px;
-   }
-   .song_list{
-      display: flex;
-      justify-content: space-between;
-      margin: 100px 0px;
-   }
-   .song_info{
-      display: flex;
-      flex-direction: column;
-      border: 1px solid black;
-      align-items: center;
-   }
-
 
 /* Tiles */
 
@@ -4381,6 +4346,7 @@ input::-moz-focus-inner {
 	height: 300px;
 	margin-top: 100px;
 	text-align: center;
+	margin-bottom: 100px;
   }
   .holy h1{
 	text-align: center;
@@ -4410,11 +4376,17 @@ input::-moz-focus-inner {
 
 #main_explain{
 	font-family: dream4;
+	
 }
 
 #service_title{
 	font-family: ablack !important;
 	font-weight :initial;
+}
+
+#service1_explain{
+	font-family: dream4 !important;
+	font-weight: 50;
 }
 
 #level{
@@ -4426,6 +4398,7 @@ input::-moz-focus-inner {
 .nav_lecture{
 	display:flex;
 	margin-right:3%;
+	font-family: dream4;
  }
  
  .nav_lecture_move{
@@ -4449,4 +4422,129 @@ input::-moz-focus-inner {
  
  .nav_lecture_js a:hover{
 	color:black;
+ }
+
+ 
+ #vocal{
+	font-family: ablack ;
+	font-size: 20px;
+	font-weight: lighter;
+
+}
+
+#service1_detail_title{
+	font-family: dream4;
+}
+
+#service_main_title{
+	font-family: dream4 !important;
+	font-weight :bold;
+	font-size: initial;
+}
+
+#service1_menu{
+	font-family: dream4;
+}
+
+
+.audios{
+    display:flex;
+    justify-content: center;
+   }
+   .audios p{
+      display: flex;
+      align-items: center;
+      font-family: 'dream4', sans-serif;
+	  font-weight: bold;
+      color: white;
+   }
+   .content_second_select{
+      text-align: center;
+   }
+   h3{
+      text-align: center;
+   }
+   .song{
+      display: flex;
+      justify-content: center;
+      width: 450px;
+      height: 200px;
+   }
+   .song_list{
+      display: flex;
+      justify-content: space-between;
+      margin: 100px 0px;
+   }
+   .song_info{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      align-items: center;
+   }
+
+   .low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
+
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+	font-family:  'Do Hyeon', sans-serif;
+	margin-left: 600px;
+	margin-right: 600px;
+	margin-bottom: 0%;
+	
+}
+
+#low_level1,#low_level2,#low_level3,#high_level1,#high_level2,#high_level3{
+	font-size: 70px;
+	margin: 0;
+}
+.low_level1,.high_level1{
+	background-color: rgb(250,154,75);
+}
+.low_level2,.high_level2{
+	background-color: rgb(250,111,1);
+}
+
+.low_level3,.high_level3{
+	background-color: rgb(234,38,6);
+}
+
+.next{
+	position:fixed;
+	right:500px;
+	top: 350px;
+
+}
+
+.before{
+	position:fixed;
+	left:500px;
+	top: 350px;
+
+}
+.next2{
+	position:fixed;
+	right:500px;
+	top: 450px;
+
+}
+
+.before2{
+	position:fixed;
+	left:500px;
+	top: 450px;
+
+}
+.img_voice{
+
+	position: relative;
+	text-align: center;
+	margin:auto
+ }
+
+ #login, #signup{
+	 font-family: ablack;
+	 margin-bottom: 0;
+	 font-weight: initial;
+	 font-size: 30px;
  }
