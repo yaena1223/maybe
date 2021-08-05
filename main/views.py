@@ -17,11 +17,31 @@ def service2(request):
 def service3(request):
     return render(request,'main/service3.html')
 
+
 def low(request):
     return render(request,'main/low.html')
 
+def low_level1(request):
+    return render(request,'main/low_level1.html')
+
+def low_level2(request):
+    return render(request,'main/low_level2.html')
+
+def low_level3(request):
+    return render(request,'main/low_level3.html')
+
 def high(request):
     return render(request,'main/high.html')
+
+def high_level1(request):
+    return render(request,'main/high_level1.html')
+
+def high_level2(request):
+    return render(request,'main/high_level2.html')
+
+def high_level3(request):
+    return render(request,'main/high_level3.html')
+
 
 def board(request):
     boards = Board.objects.all().order_by('-date')
