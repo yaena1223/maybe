@@ -3,8 +3,10 @@
 //만약 myMinCompare <= totalSongList[index].min && myMaxCompare >= totalSongList[index].max라면(부를 수 있다면)
 //해당 노래를 캐러셀에 추가 by 를 추가
 //세부 방식 나중에 다시 고민
-const button1 = document.getElementById("button1");
-button1.addEventListener("click", showList);
+
+const button = document.getElementById("button1");
+button.addEventListener("click", showList);
+
 let slideNumber = 1;
 const carouselIndicators = document.querySelector(".carousel-indicators");
 const carouselInner= document.querySelector(".carousel-inner");
@@ -32,11 +34,19 @@ function showList(){
             newAnchor.setAttribute('href', `${element.youtube}`);
             newAnchor.setAttribute('target', '_blank');
             newDiv.appendChild(newAnchor);
+
             const newImage = document.createElement('img');
             newImage.className = "d-block w-100";
             newImage.setAttribute('src', `/static/images/songs/${element.image_name}.jpeg`);
             newImage.setAttribute('alt', '...');
             newAnchor.appendChild(newImage);
+
+            console.log(carouselInner);
+            const imgSource = newImage.src;
+            console.log(imgSource);
+        }
+        else{
+            console.log(`아쉽게도 당신은 ${element.name}를 소화하기 어렵습니다.`);
         }
     }
 };
