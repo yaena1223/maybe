@@ -587,3 +587,8 @@ function service2(){
     }
   }
 };
+
+function fbMove(seq){
+  var offset = $("." + seq).offset();
+  $('html, body').animate({scrollTop : offset.top - 150}, 100);
+}
