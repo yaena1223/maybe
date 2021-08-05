@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="low_level3">
+    <h1 id="low_level3">Level 3 </h1>
+    <div class="audios">
+      <p>0옥타브 파&nbsp; </p>
+   
+      <p>
+         <audio controls src="{% static 'audio/0옥타브파.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p id = "checkbox">
+       <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+     </p>
+    </div>
+    <div class="audios">
+      <p>0옥타브 미&nbsp</p>
+      <p>
+         <audio controls src="{% static 'audio/0옥타브미.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>0옥타브 레&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/0옥타브레.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>0옥타브 도&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/0옥타브도.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+      </p>
+    </div>
+</div>
+
+<div class = "before">
+  <a href = "{% url 'main:low_level2' %}"><button> < </button></a> 
+</div>
+{% endblock %}
