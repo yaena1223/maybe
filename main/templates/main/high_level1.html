@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="high_level1">
+    <h1 id="high_level1">Level 1 </h1>
+    <div class="audios">
+      <p>1옥타브 도&nbsp; </p>
+   
+      <p>
+         <audio controls src="{% static 'audio/1옥타브도.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p id = "checkbox">
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+       </p>
+   
+    </div>
+    <div class="audios">
+      <p>1옥타브 레&nbsp;</p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브레.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>1옥타브 미&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브미.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>1옥타브 파&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브파.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>1옥타브 솔&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브솔.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>1옥타브 라&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브라.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+    <div class="audios">
+      <p>1옥타브 시&nbsp; </p>
+      <p>
+         <audio controls src="{% static 'audio/1옥타브시.aac'%}">
+           Your browser does not support the
+           <code>
+             audio
+           </code> 
+           element.
+         </audio>
+      </p>
+      <p>
+         <input type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+      </p>
+    </div>
+
+</div>
+<div class = "next2">
+  <a href = "{% url 'main:high_level2' %}"><button> > </button></a> 
+</div>
+
+{% endblock %}
