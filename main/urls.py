@@ -23,4 +23,5 @@ urlpatterns=[
     path('request_delete/<str:id>',request_delete,name='request_delete'),
     path('request_create',request_create,name='request_create'),
     path('<str:board_id>/create_comment',create_comment,name='create_comment'),
+    path('like_toggle/<int:board_id>/',like_toggle,name="like_toggle")
 ]
