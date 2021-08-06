@@ -552,6 +552,7 @@ const totalSongList = [
   }
 ]
 
+
 btn.addEventListener("click", service2);
 function service2(){
   // special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
