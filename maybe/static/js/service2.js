@@ -49,6 +49,7 @@ const totalSongList = [
     max_name: "2옥타브 도",
     youtube: "https://www.youtube.com/results?search_query=Marry+me",
     image_name: "marryme",
+    genre: "ballad",
   },
   {
     name: "NEXT LEVEL",
@@ -59,6 +60,7 @@ const totalSongList = [
     max_name: "3옥타브 파",
     youtube: "https://www.youtube.com/results?search_query=NEXT+LEVEL",
     image_name: "nextlevel",
+    genre: "dance",
   },
   {
     name: "One Love",
@@ -69,6 +71,7 @@ const totalSongList = [
     max_name: "3옥타브 미",
     youtube: "https://www.youtube.com/results?search_query=One+Love",
     image_name: "onelove",
+    genre: "ballad",
   },
   {
     name: "Timeless",
@@ -79,6 +82,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=Timeless",
     image_name: "timeless",
+    genre: "ballad",
   },
   {
     name: "그 날에 나는 맘이 편했을까",
@@ -89,6 +93,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=%EA%B7%B8%EB%82%A0%EC%97%90+%EB%82%98%EB%8A%94+%EB%A7%98%EC%9D%B4+%ED%8E%B8%ED%96%88%EC%9D%84%EA%B9%8C",
     image_name: "그날에나는맘이편했을까",
+    genre: "ballad",
   },
   {
     name: "그녀를 사랑해줘요",
@@ -99,6 +104,7 @@ const totalSongList = [
     max_name: "2옥타브 도",
     youtube: "https://www.youtube.com/results?search_query=그녀를+사랑해줘요",
     image_name: "그녀를사랑해줘요",
+    genre: "ballad",
   },
   {
     name: "그대라는 사치",
@@ -109,6 +115,7 @@ const totalSongList = [
     max_name: "3옥타브 도",
     youtube: "https://www.youtube.com/results?search_query=그대라는+사치",
     image_name: "그대라는사치",
+    genre: "ballad",
   },
   {
     name: "그대를 사랑하는 10가지 이유",
@@ -119,6 +126,7 @@ const totalSongList = [
     max_name: "2옥타브 솔",
     youtube: "https://www.youtube.com/results?search_query=그대를+사랑하는+10가지+이유",
     image_name: "그대를사랑하는10가지이유",
+    genre: "ballad",
   },
   {
     name: "기다릴게",
@@ -129,6 +137,7 @@ const totalSongList = [
     max_name: "3옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=기다릴게",
     image_name: "기다릴게",
+    genre: "ballad",
   },
   {
     name: "까만안경",
@@ -139,6 +148,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=까만안경",
     image_name: "까만안경",
+    genre: "ballad",
   },
   {
     name: "꿈속에 너",
@@ -149,6 +159,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=꿈속에+너",
     image_name: "꿈속에너",
+    genre: "ballad",
   },
   {
     name: "나를 사랑했던 사람아",
@@ -159,6 +170,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=나를+사랑했던+사람아",
     image_name: "나를사랑했던사람아",
+    genre: "ballad",
   },
   {
     name: "내 사람",
@@ -169,6 +181,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=내+사람",
     image_name: "내사람",
+    genre: "R&B",
   },
   {
     name: "내 손을 잡아(최고의 사랑 OST)",
@@ -179,6 +192,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=내+손을+잡아(최고의+사랑+OST)",
     image_name: "내손을잡아",
+    genre: "ballad",
   },
   {
     name: "너를 만나",
@@ -189,6 +203,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=너를+만나",
     image_name: "너를만나",
+    genre: "ballad",
   },
   {
     name: "너였다면(또 오해영 OST)",
@@ -199,6 +214,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=너였다면(또+오해영+OST)",
     image_name: "너였다면",
+    genre: "ballad",
   },
   {
     name: "너의 모든 순간(별에서 온 그대 OST)",
@@ -209,6 +225,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=너의+모든+순간(별에서+온+그대+OST)",
     image_name: "너의모든순간",
+    genre: "ballad",
   },
   {
     name: "너의 번호를 누르고",
@@ -219,6 +236,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=너의+번호를+누르고",
     image_name: "너의 번호를 누르고",
+    genre: "ballad",
   },
   {
     name: "노래방에서",
@@ -229,6 +247,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=노래방에서",
     image_name: "노래방에서",
+    genre: "rock",
   },
   {
     name: "다시 만날까봐",
@@ -239,6 +258,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=다시+만날까봐",
     image_name: "다시만날까봐",
+    genre: "ballad",
   },
   {
     name: "라라라",
@@ -249,6 +269,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=라라라",
     image_name: "라라라",
+    genre: "ballad",
   },
   {
     name: "롤린(Rollin')",
@@ -259,6 +280,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=롤린(Rollin')",
     image_name: "롤린",
+    genre: "dance",
   },
   {
     name: "모든 날, 모든 순간",
@@ -269,6 +291,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=모든+날,+모든+순간",
     image_name: "모든날모든순간",
+    genre: "ballad",
   },
   {
     name: "밝게 빛나는 별이 되어 비춰줄게",
@@ -279,6 +302,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=밝게+빛나는+별이+되어+비춰줄게",
     image_name: "밝게빛나는별이되어비춰줄게",
+    genre: "R%B",
   },
   {
     name: "벌써 일년",
@@ -289,6 +313,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=벌써+일년",
     image_name: "벌써일년",
+    genre: "ballad",
   },
   {
     name: "사계",
@@ -299,6 +324,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=사계",
     image_name: "사계",
+    genre: "ballad",
   },
   {
     name: "사랑이 식었다고 말해도 돼",
@@ -309,6 +335,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=사랑이+식었다고+말해도+돼",
     image_name: "사랑이식었다고말해도돼",
+    genre: "ballad",
   },
   {
     name: "삭제",
@@ -319,6 +346,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=삭제",
     image_name: "삭제",
+    genre: "ballad",
   },
   {
     name: "살다가",
@@ -329,6 +357,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=살다가",
     image_name: "살다가",
+    genre: "ballad",
   },
   {
     name: "상상더하기",
@@ -339,6 +368,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=상상더하기",
     image_name: "상상더하기",
+    genre: "dance",
   },
   {
     name: "소주 한 잔",
@@ -349,6 +379,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=소주+한+잔",
     image_name: "소주한잔",
+    genre: "ballad",
   },
   {
     name: "스토커",
@@ -359,6 +390,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=스토커",
     image_name: "스토커",
+    genre: "indi",
   },
   {
     name: "신호등",
@@ -369,6 +401,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=신호등",
     image_name: "신호등",
+    genre: "rock",
   },
   {
     name: "아로하(슬기로운 의사생활 OST)",
@@ -379,6 +412,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=아로하(슬기로운+의사생활+OST)",
     image_name: "아로하",
+    genre: "ballad",
   },
   {
     name: "안아줘",
@@ -389,6 +423,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=안아줘",
     image_name: "안아줘",
+    genre: "ballad",
   },
   {
     name: "야생화",
@@ -399,6 +434,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=야생화",
     image_name: "야생화",
+    genre: "ballad",
   },
   {
     name: "어디에도",
@@ -409,6 +445,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=어디에도",
     image_name: "어디에도",
+    genre: "ballad",
   },
   {
     name: "오래된 노래",
@@ -419,6 +456,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=오래된+노래",
     image_name: "오래된노래",
+    genre: "indi",
   },
   {
     name: "우리 왜 헤어져야 해",
@@ -429,6 +467,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=우리+왜+헤어져야+해",
     image_name: "우리왜헤어져야해",
+    genre: "ballad",
   },
   {
     name: "응급실(쾌걸춘향 OST)",
@@ -439,6 +478,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=응급실(쾌걸춘향+OST)",
     image_name: "응급실",
+    genre: "ballad",
   },
   {
     name: "이미 슬픈 사랑",
@@ -449,6 +489,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=이미+슬픈+사랑",
     image_name: "이미슬픈사랑",
+    genre: "rock",
   },
   {
     name: "조금 취했어",
@@ -459,6 +500,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=조금+취했어",
     image_name: "조금취했어",
+    genre: "ballad",
   },
   {
     name: "좋니",
@@ -469,6 +511,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=좋니",
     image_name: "좋니",
+    genre: "ballad",
   },
   {
     name: "지나오다",
@@ -479,6 +522,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=지나오다",
     image_name: "지나오다",
+    genre: "ballad",
   },
   {
     name: "첫눈처럼 너에게 가겠다",
@@ -489,6 +533,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=첫눈처럼+너에게+가겠다",
     image_name: "첫눈처럼너에게가겠다",
+    genre: "ballad",
   },
   {
     name: "체념",
@@ -499,6 +544,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=체념",
     image_name: "체념",
+    genre: "ballad",
   },
   {
     name: "추억은 만남보다 이별에 남아",
@@ -509,6 +555,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=추억은+만남보다+이별에+남아",
     image_name: "추억은만남보다이별에남아",
+    genre: "ballad",
   },
   {
     name: "축가",
@@ -519,6 +566,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=축가",
     image_name: "축가",
+    genre: "ballad",
   },
   {
     name: "포장마차",
@@ -529,6 +577,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=포장마자",
     image_name: "포장마차",
+    genre: "ballad",
   },
   {
     name: "형",
@@ -539,6 +588,7 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=형",
     image_name: "형",
+    genre: "rock",
   },
   {
     name: "홍연",
@@ -549,9 +599,9 @@ const totalSongList = [
     max_name: "2옥타브 레",
     youtube: "https://www.youtube.com/results?search_query=홍연",
     image_name: "홍연",
+    genre: "ballad",
   }
 ]
-
 
 btn.addEventListener("click", service2);
 function service2(){
