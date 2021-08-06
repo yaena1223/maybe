@@ -4535,6 +4535,25 @@ input::-moz-focus-inner {
 	top: 450px;
 
 }
+
+.beforetohigh{
+	position:fixed;
+	right:250px;
+	top:350px;
+}
+
+.beforetolow{
+	position:fixed;
+	left:250px;
+	top:450px;
+}
+
+.testmain{
+	position:fixed;
+	right:250px;
+	top:450px;
+}
+
 .img_voice{
 
 	position: relative;
