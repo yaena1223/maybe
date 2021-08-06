@@ -1,10 +1,10 @@
-const lowResult = document.querySelector(".low_result");
-const savedLowResult = localStorage.getItem("low_test_result");
-lowResult.innerText = savedLowResult;
+const LOW_TEST_RESULT_KEY = "low_test_result";
+const HIGH_TEST_RESULT_KEY = "high_test_result";
 
-const highResult = document.querySelector(".high_result");
-const savedHighResult = localStorage.getItem("high_test_result");
-highResult.innerText = savedHighResult;
+const lowResult = document.querySelector("#low_result");
+const savedLowResult = localStorage.getItem(LOW_TEST_RESULT_KEY);
+lowResult.innerText = `최근 테스트 결과: ${savedLowResult}`;
+
 
 function checkOnlyOne(element) {//중복 체크 막기
   const checkboxes = document.getElementsByName("scales");
@@ -21,19 +21,7 @@ function getLowCheckboxValue(event){//선택한 최저음정 가져오기
   }else {
     result = '';
   }
-  localStorage.setItem("low_test_result", result);
-  const newSavedLowResult = localStorage.getItem("low_test_result");
-  lowResult.innerText = newSavedLowResult;
-}
-
-function getHighCheckboxValue(event){//선택한 최고음정 가져오기
-  let result2 = '';
-  if(event.checked)  {
-    result2 = event.value;
-  }else {
-    result2 = '';
-  }
-  localStorage.setItem("high_test_result", result2);
-  const newSavedHighResult = localStorage.getItem("high_test_result");
-  highResult.innerText = newSavedHighResult;
+  localStorage.setItem(LOW_TEST_RESULT_KEY, result);
+  const newSavedLowResult = localStorage.getItem(LOW_TEST_RESULT_KEY);
+  lowResult.innerText = `최근 테스트 결과: ${newSavedLowResult}`;
 }
