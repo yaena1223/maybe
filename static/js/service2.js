@@ -588,7 +588,7 @@ function service2(){
   }
 };
 
-function fbMove(seq){
+function MovetoResult(seq){
   var offset = $("." + seq).offset();
   $('html, body').animate({scrollTop : offset.top - 150}, 100);
 }
