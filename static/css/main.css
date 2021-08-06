@@ -4548,3 +4548,8 @@ input::-moz-focus-inner {
 	 font-weight: initial;
 	 font-size: 30px;
  }
+
+ 
+.nav_lecture{
+    visibility:hidden;
+}
