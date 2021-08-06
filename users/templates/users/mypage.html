@@ -1,20 +1,16 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<style>
-  .nav_lecture{
-      visibility:hidden;
-  }
-</style>
 
-
-<div class="container">
+<section id="wrapper">
+<div class="container" style="padding: 0 1.25em;">
     <br><br><br>
     <h2>{{user.username}}</h2>
-</div>
+
 <table class="table">
   <thead>
     <tr>
+      <th scope="col">번호</th>
       <th scope="col">노래</th>
       <th scope="col">가수</th>
       <th scope="col">작성시간</th>
@@ -23,12 +19,14 @@
   <tbody>
     {% for board in boards %}
     <tr>
-      <th scope="row"><a href="{%url 'main:request_detail' board.id%}">{{board.song}}</a></th>
+      <th>{{ forloop.counter }}</th>
+      <td scope="row"><a href="{%url 'main:request_detail' board.id%}">{{board.song}}</a></td>
       <td><a href="{%url 'main:request_detail' board.id%}">{{board.singer}}</a></td>
       <td style='color:white'>{{board.date}}</td>
-    </tr>
+    </tr>   
     {% endfor %}
   </tbody>
 </table>
-
+</div>
+</section>
 {% endblock  %}

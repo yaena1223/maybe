@@ -1,11 +1,6 @@
 {% extends 'base.html' %} 
 {% load static %} 
 {% block content %}
-<style>
-  .nav_lecture{
-      visibility:hidden;
-  }
-</style>
 
 <div class="holy">
   <form method="POST" action="{% url 'account_signup' %}">
@@ -18,4 +13,5 @@
     <p><input type="submit" value="회원가입"></p>
   </form>  
 </div>
+
 {% endblock %}
