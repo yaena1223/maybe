@@ -66,6 +66,11 @@
   
                 </p>
             <p>{{comment.content}}</p>
+            {% if user == comment.writer %}
+            <a href="{% url 'main:edit_comment' comment.id %}">수정하기&nbsp</a>
+            <a href="{% url 'main:delete_comment' comment.id %}">삭제하기</a>
+            {% else %}
+            {% endif %}
 
             <hr>
         </div>

@@ -4553,3 +4553,14 @@ input::-moz-focus-inner {
     visibility:hidden;
 }
 
+.nav_lecture_js:hover{
+	cursor: pointer;
+}
+
+.nav_lecture_js a:hover{
+	color:black;
+	border: 2px solid yellow;
+	border-radius: 10px;
+ }
+
+

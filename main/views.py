@@ -98,6 +98,22 @@ def create_comment(request, board_id):
 		Comment.objects.create(content=comment_content, writer=current_user, board=board)
 	return redirect('main:request_detail', board_id)
 
+def edit_comment(request,comment_id):
+    edit_comment = Comment.objects.get(id = comment_id)
+    return render(request,'main/edit_comment.html',{'comment':edit_comment})
+
+def update_comment(request,comment_id):
+    update_comment = get_object_or_404(Comment, pk = comment_id)
+    update_comment.writer = request.user
+    update_comment.content = request.POST['content']
+    update_comment.save()
+    return redirect('main:request_detail',update_comment.board.id)
+
+def delete_comment(request,comment_id):
+    delete_comment = get_object_or_404(Comment,pk = comment_id)
+    delete_comment.delete()
+    return redirect('main:request_detail', delete_comment.board.id)
+
 
 # 3. like_toggle 함수 작성하기
 
