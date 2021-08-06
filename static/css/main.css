@@ -4535,6 +4535,25 @@ input::-moz-focus-inner {
 	top: 450px;
 
 }
+
+.beforetohigh{
+	position:fixed;
+	right:370px;
+	top:350px;
+}
+
+.beforetolow{
+	position:fixed;
+	left:370px;
+	top:450px;
+}
+
+.testmain{
+	position:fixed;
+	right:325px;
+	top:450px;
+}
+
 .img_voice{
 
 	position: relative;
@@ -4549,7 +4568,18 @@ input::-moz-focus-inner {
 	 font-size: 30px;
  }
 
- 
 .nav_lecture{
     visibility:hidden;
 }
+
+.nav_lecture_js:hover{
+	cursor: pointer;
+}
+
+.nav_lecture_js a:hover{
+	color:black;
+	border: 2px solid yellow;
+	border-radius: 10px;
+ }
+
+
