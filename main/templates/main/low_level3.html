@@ -3,80 +3,95 @@
 {% load static %}
 
 {% block content %}
-
-<div class="low_level3">
-    <h1 id="low_level3">Level 3 </h1>
-    <div class="audios">
-      <p>0옥타브 파&nbsp; </p>
-   
-      <p>
-         <audio controls src="{% static 'audio/0옥타브파.aac'%}">
-           Your browser does not support the
-           <code>
-             audio
-           </code> 
-           element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-       <input value="0옥타브 파" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
-     </p>
-    </div>
-    <div class="audios">
-      <p>0옥타브 미&nbsp</p>
-      <p>
-         <audio controls src="{% static 'audio/0옥타브미.aac'%}">
-           Your browser does not support the
-           <code>
-             audio
-           </code> 
-           element.
-         </audio>
-      </p>
-      <p>
-         <input value="0옥타브 미" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
-      </p>
-    </div>
-    <div class="audios">
-      <p>0옥타브 레&nbsp; </p>
-      <p>
-         <audio controls src="{% static 'audio/0옥타브레.aac'%}">
-           Your browser does not support the
-           <code>
-             audio
-           </code> 
-           element.
-         </audio>
-      </p>
-      <p>
-         <input value="0옥타브 레" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
-      </p>
-    </div>
-    <div class="audios">
-      <p>0옥타브 도&nbsp; </p>
-      <p>
-         <audio controls src="{% static 'audio/0옥타브도.aac'%}">
-           Your browser does not support the
-           <code>
-             audio
-           </code> 
-           element.
-         </audio>
-      </p>
-      <p>
-         <input value="0옥타브 도" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
-      </p>
-    </div>
+<div class = "testmain">
+  <a href = "{% url 'main:service1'%}"><button style="width: 250px ;font-family: 'dream4'; ">평균 음역대 확인하기</button></a>
+</div>
+<div class = "beforetohigh">
+  <a href = "{% url 'main:high_level1'%}"><button style="width: 250px;font-family: 'dream4';">최고음 확인하기</button></a>
 </div>
 
-<div class = "before">
-  <a href = "{% url 'main:low_level2' %}"><button> < </button></a> 
+
+<div class = "service1">
+
+  <div class = "before">
+    <a href = "{% url 'main:low_level2' %}"><button> < </button></a> 
+  </div>
+
+<div class="low_level">
+  <div class="low_level3">
+      <h1 id="low_level3">Level 3 </h1>
+      <div class="audios">
+        <p>0옥타브 파&nbsp; </p>
+    
+        <p>
+          <audio controls src="{% static 'audio/0옥타브파.aac'%}">
+            Your browser does not support the
+            <code>
+              audio
+            </code> 
+            element.
+          </audio>
+        </p>
+        <p id = "checkbox">
+        <input value="0옥타브 파" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+      </p>
+      </div>
+      <div class="audios">
+        <p>0옥타브 미&nbsp</p>
+        <p>
+          <audio controls src="{% static 'audio/0옥타브미.aac'%}">
+            Your browser does not support the
+            <code>
+              audio
+            </code> 
+            element.
+          </audio>
+        </p>
+        <p>
+          <input value="0옥타브 미" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+        </p>
+      </div>
+      <div class="audios">
+        <p>0옥타브 레&nbsp; </p>
+        <p>
+          <audio controls src="{% static 'audio/0옥타브레.aac'%}">
+            Your browser does not support the
+            <code>
+              audio
+            </code> 
+            element.
+          </audio>
+        </p>
+        <p>
+          <input value="0옥타브 레" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+        </p>
+      </div>
+      <div class="audios">
+        <p>0옥타브 도&nbsp; </p>
+        <p>
+          <audio controls src="{% static 'audio/0옥타브도.aac'%}">
+            Your browser does not support the
+            <code>
+              audio
+            </code> 
+            element.
+          </audio>
+        </p>
+        <p>
+          <input value="0옥타브 도" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+        </p>
+      </div>
+  </div>
+</div>
+<div class = "fake">
+  <button> > </button>
 </div>
 
-<div class = 'beforetohigh'>
-  <a href = "{% url 'main:high_level1'%}"><button>최고음 확인하기</button></a>
-</div>
-{% if user.is_authenticated %}
-<div id="low_result"></div>
-{% endif %}
+
+  <div class = "low_result">
+    {% if user.is_authenticated %}
+    <button><div id="low_result"></div></button>
+    {% endif %}
+  </div>
+  </div>
 {% endblock %}

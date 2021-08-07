@@ -3,134 +3,146 @@
 {% load static %}
 
 {% block content %}
-
-<div class="high_level3">
-   <h1 id="high_level3">Level 3 </h1>
-   <div class="audios">
-      <p>3옥타브 도&nbsp; </p>
-   
-      <p>
-         <audio controls src="{% static 'audio/3옥타브도.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-            element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 도" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   </div>
-   <div class="audios">
-      <p>3옥타브 레&nbsp; </p>
-
-      <p>
-         <audio controls src="{% static 'audio/3옥타브레.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 레" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-      
-   </div>
-   <div class="audios">
-      <p>3옥타브 미&nbsp; </p>
-
-      <p>
-         <audio controls src="{% static 'audio/3옥타브미.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 미" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   </div>
-   <div class="audios">
-      <p>3옥타브 파&nbsp; </p>
-   
-      <p>
-         <audio controls src="{% static 'audio/3옥타브파.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 파" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   </div>
-   <div class="audios">
-      <p>3옥타브 솔&nbsp; </p>
-
-      <p>
-         <audio controls src="{% static 'audio/3옥타브솔.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>		
-      <p id = "checkbox">
-         <input value="3옥타브 솔" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   
-   </div>
-   <div class="audios">
-      <p>3옥타브 라&nbsp; </p>
-
-      <p>
-         <audio controls src="{% static 'audio/3옥타브라.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 라" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   </div>
-   <div class="audios">
-      <p>3옥타브 시&nbsp; </p>
-   
-      <p>
-         <audio controls src="{% static 'audio/3옥타브시.aac'%}">
-         Your browser does not support the
-         <code>
-            audio
-         </code> 
-         element.
-         </audio>
-      </p>
-      <p id = "checkbox">
-         <input value="3옥타브 시" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
-      </p>
-   
-   </div>
-</div>
-
-<div class = "before2">
-   <a href = "{% url 'main:high_level2' %}"><button> < </button></a> 
-</div>
-
 <div class = "testmain">
-   <a href = "{% url 'main:service1'%}"><button> 평균 음역대 확인하기 </button></a>
+   <a href = "{% url 'main:service1'%}"><button style="width: 250px ;font-family: 'dream4';">평균 음역대 확인하기</button></a>
+ </div>
+ <div class = "beforetolow">
+   <a href = "{% url 'main:low_level1'%}"><button style="width: 250px;font-family: 'dream4';">최저음 확인하기</button></a>
+ </div>
+ <div class = "service1">
+   <div class = "before2">
+      <a href = "{% url 'main:high_level2' %}"><button> < </button></a> 
+   </div>
+   
+   <div class = "high_level">
+   <div class="high_level3">
+      <h1 id="high_level3">Level 3 </h1>
+      <div class="audios">
+         <p>3옥타브 도&nbsp; </p>
+      
+         <p>
+            <audio controls src="{% static 'audio/3옥타브도.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+               element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 도" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      </div>
+      <div class="audios">
+         <p>3옥타브 레&nbsp; </p>
+
+         <p>
+            <audio controls src="{% static 'audio/3옥타브레.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 레" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+         
+      </div>
+      <div class="audios">
+         <p>3옥타브 미&nbsp; </p>
+
+         <p>
+            <audio controls src="{% static 'audio/3옥타브미.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 미" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      </div>
+      <div class="audios">
+         <p>3옥타브 파&nbsp; </p>
+      
+         <p>
+            <audio controls src="{% static 'audio/3옥타브파.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 파" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      </div>
+      <div class="audios">
+         <p>3옥타브 솔&nbsp; </p>
+
+         <p>
+            <audio controls src="{% static 'audio/3옥타브솔.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>		
+         <p id = "checkbox">
+            <input value="3옥타브 솔" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      
+      </div>
+      <div class="audios">
+         <p>3옥타브 라&nbsp; </p>
+
+         <p>
+            <audio controls src="{% static 'audio/3옥타브라.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 라" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      </div>
+      <div class="audios">
+         <p>3옥타브 시&nbsp; </p>
+      
+         <p>
+            <audio controls src="{% static 'audio/3옥타브시.aac'%}">
+            Your browser does not support the
+            <code>
+               audio
+            </code> 
+            element.
+            </audio>
+         </p>
+         <p id = "checkbox">
+            <input value="3옥타브 시" onclick='checkOnlyOne(this); getHighCheckboxValue(this);' type="checkbox" id="scales" name="scales"style="margin-left: 15px;">
+         </p>
+      
+      </div>
+   </div>
 </div>
-{% if user.is_authenticated %}
-<div id="high_result">123</div>
-{% endif %}
+
+
+<div class = "fake">
+   <button> < </button>
+ </div>
+
+ <div class = "high_result">
+   {% if user.is_authenticated %}
+   <button><div id="high_result"></div></button>
+   {% endif %}
+ </div>
 {% endblock %}
