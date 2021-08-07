@@ -19,7 +19,7 @@
           </audio>
        </p>
        <p id = "checkbox">
-         <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+         <input value="1옥타브 시" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
        </p>
     </div>
     <div class="audios">
@@ -34,7 +34,7 @@
           </audio>
        </p>
        <p>
-          <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+          <input value="1옥타브 라" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
        </p>
     </div>
     <div class="audios">
@@ -49,7 +49,7 @@
           </audio>
        </p>
        <p>
-          <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+          <input value="1옥타브 솔" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
        </p>
     </div>
     <div class="audios">
@@ -64,7 +64,7 @@
           </audio>
        </p>
        <p>
-          <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+          <input value="1옥타브 파" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
        </p>
     </div>
     <div class="audios">
@@ -79,7 +79,7 @@
           </audio>
        </p>
        <p>
-          <input type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
+          <input value="1옥타브 미" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
        </p>
     </div>
 
@@ -87,6 +87,5 @@
 <div class = "next">
   <a href = "{% url 'main:low_level2' %}"><button> > </button></a> 
 </div>
-
-
+<div id="low_result">123</div>
 {% endblock %}
