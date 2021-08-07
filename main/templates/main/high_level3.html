@@ -130,6 +130,7 @@
 <div class = "testmain">
    <a href = "{% url 'main:service1'%}"><button> 평균 음역대 확인하기 </button></a>
 </div>
-   
+{% if user.is_authenticated %}
 <div id="high_result">123</div>
+{% endif %}
 {% endblock %}

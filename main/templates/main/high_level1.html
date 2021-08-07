@@ -122,5 +122,7 @@
 <div class = "next2">
   <a href = "{% url 'main:high_level2' %}"><button> > </button></a> 
 </div>
-<div id="high_result">123</div>
+{% if user.is_authenticated %}
+<div id="high_result"></div>
+{% endif %}
 {% endblock %}
