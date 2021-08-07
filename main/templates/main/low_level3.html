@@ -76,5 +76,7 @@
 <div class = 'beforetohigh'>
   <a href = "{% url 'main:high_level1'%}"><button>최고음 확인하기</button></a>
 </div>
-<div id="low_result">123</div>
+{% if user.is_authenticated %}
+<div id="low_result"></div>
+{% endif %}
 {% endblock %}
