@@ -9,10 +9,12 @@
  <div class = "beforetohigh">
    <a href = "{% url 'main:high_level1'%}"><button style="width: 250px;font-family: 'dream4';">최고음 확인하기</button></a>
  </div>
+
  <div class = "service1">
    <div class = "fake">
      <button> < </button>
    </div>
+
    <div class = "low_level">
       <div class="low_level1">
          <h1 id="low_level1">Level 1 </h1>
@@ -92,16 +94,17 @@
                <input value="1옥타브 미" onclick='checkOnlyOne(this); getLowCheckboxValue(this);' type="checkbox" id="scales" name="scales" style="margin-left: 15px;">
             </p>
          </div>
+      </div>
+   </div>
+   <div class = "next">
+   <a href = "{% url 'main:low_level2' %}"><button> > </button></a> 
+   </div>
 </div>
-</div>
-<div class = "next">
-  <a href = "{% url 'main:low_level2' %}"><button> > </button></a> 
-</div>
-</div>
+
 <div class = "low_result">
    {% if user.is_authenticated %}
    <div id="user_username">{{user.username}}님의</div>
    <div id="low_result"></div>
    {% endif %}
- </div>
+</div>
 {% endblock %}
