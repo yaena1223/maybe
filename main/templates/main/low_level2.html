@@ -100,8 +100,8 @@
   </div>
   <div class = "low_result">
     {% if user.is_authenticated %}
+    <div id="user_username">{{user.username}}님의</div>
     <div id="low_result"></div>
-    <div id="user_username">{{user.username}}</div>
     {% endif %}
   </div>
 {% endblock %}

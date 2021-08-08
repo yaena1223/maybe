@@ -10,6 +10,7 @@
     <section id="wrapper">
         <header>
             <div class="inner">
+                
                 <h2 id="service_main_title">음역대 테스트</h2>
                 <br>
                 <h3 id = "service1_detail_title">필요성</h3>
@@ -42,7 +43,12 @@
                             <img src="{% static 'images/pic01.jpg'%}"  alt="" />
                         </span>
                         <a href="{% url 'main:low_level1' %}">
+                            {% if user.is_authenticated %}
+                            <div id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}님의</div>
+                            <h2 id = "service1_menu">최저음은?{% if user.is_authenticated %}<h3 id="low_result"></h3>{% endif %}</h2>
+                            {% else %}
                             <h2 id = "service1_menu">나의 최저음은?{% if user.is_authenticated %}<h3 id="low_result"></h3>{% endif %}</h2>
+                            {% endif %}
                             <div class="content">
                                 <p>확인하러 가기 ♪♪(oᐛ)o～♪♪</p>
                             </div>
@@ -54,7 +60,12 @@
                             <img src="{% static 'images/pic01.jpg'%}"  alt="" />
                         </span>
                         <a href="{% url 'main:high_level1' %}">
+                            {% if user.is_authenticated %}
+                            <div id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}님의</div>
+                            <h2 id = "service1_menu">최고음은?{% if user.is_authenticated %}<h3 id="high_result"></h3>{% endif %}</h2>
+                            {% else %}
                             <h2 id = "service1_menu">나의 최고음은?{% if user.is_authenticated %}<h3 id="high_result"></h3>{% endif %}</h2>
+                            {% endif %}
                             <div class="content">
                                 <p>확인하러 가기 ♪♪(oᐛ)o～♪♪</p>
                             </div>
@@ -65,5 +76,5 @@
             </div>
         </div>
     </section>
-    <div id="user_username">{{user.username}}</div>
+    
 {% endblock %}
