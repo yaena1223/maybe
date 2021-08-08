@@ -133,7 +133,8 @@
  </div>
  <div class = "high_result">
   {% if user.is_authenticated %}
-  <button><div id="high_result"></div></button>
+  <div id="high_result"></div>
+  <div id="user_username">{{user.username}}</div>
   {% endif %}
 </div>
 {% endblock %}
