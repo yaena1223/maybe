@@ -887,17 +887,6 @@ const totalSongList = [
     image_name: "미리 메리 크리스마스",
     genre: "dance",
   },
-  {
-    name: "미리 메리 크리스마스(Feat.천둥 Of MBLAQ)",
-    singer: "아이유",
-    min: "5",
-    max: "15",
-    min_name: "0옥타브 솔",
-    max_name: "2옥타브 도",
-    youtube: "https://www.youtube.com/results?search_query=미리+메리+크리스마스",
-    image_name: "미리 메리 크리스마스",
-    genre: "dance",
-  },
 ]
 
 btn.addEventListener("click", service2);
