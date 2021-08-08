@@ -4553,3 +4553,6 @@ input::-moz-focus-inner {
 	font-size: 18px;
 }
 
+#user_username{
+	visibility: hidden;
+}

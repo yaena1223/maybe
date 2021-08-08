@@ -892,14 +892,13 @@ const totalSongList = [
 btn.addEventListener("click", service2);
 function service2(){
   // special.innerHTML = "나의 최저음정: " + myMin.value +" / 나의 최고 음정: " + myMax.value;
-  special.innerHTML = `나의 최저음정: ${myMin.value} / 나의 최고 음정: ${myMax.value}`;
   const myMinCompare = parseInt(myMin.value);
   const myMaxCompare = parseInt(myMax.value);
   for (let index = 0; index < totalSongList.length; index++) {
     const element = totalSongList[index];
     if(element.name === chosenSong.value){//이름 일치하면
       //노래의 음정 출력(숫자로)
-      normal.innerHTML = `노래의 최저음정: ${element.min} / 노래의 최고 음정: ${element.max}`;
+      normal.innerHTML = `노래의 최저음정: ${element.min_name} / 노래의 최고 음정: ${element.max_name}`;
       //당신이 선택한 노래는 (가수)의 (제목)입니다.
       wantSong.innerText = `당신이 부르고 싶은 노래는 ${element.singer}의 ${element.name}입니다.`;
       //부를수 있는지 없는지 판정
