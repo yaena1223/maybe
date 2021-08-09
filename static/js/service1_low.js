@@ -2,7 +2,7 @@ const user = document.querySelector("#user_username");
 const userName = user.innerText;
 const LOW_TEST_RESULT_KEY = `low_test_result_${userName}`;
 const lowResult = document.querySelector("#low_result");
-const savedLowResult = localStorage.getItem(LOW_TEST_RESULT_KEY);
+let savedLowResult = localStorage.getItem(LOW_TEST_RESULT_KEY);
 if(savedLowResult === null){
   savedLowResult = "?";
 }

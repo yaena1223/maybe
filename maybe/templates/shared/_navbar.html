@@ -27,9 +27,9 @@
                 <h2>Menu</h2>
                 <ul class="links">
                     <li><a href="{% url 'main:showmain'%}">메인 페이지</a></li>
-                    <li><a href="{% url 'main:service1'%}">음역대 테스트</a></li>
-                    <li><a href="{% url 'main:service2'%}">노래 가창 가능 여부</a></li>
-                    <li><a href="{% url 'main:service3'%}">음정별 노래 추천</a></li>
+                    <li><a href="{% url 'main:service1'%}">10초 안에 내 음역대 찾기</a></li>
+                    <li><a href="{% url 'main:service2'%}">원하는 노래, 부르는 법을 알아보자</a></li>
+                    <li><a href="{% url 'main:service3'%}">쓰앵님이 추천하는 너의 노래는?</a></li>
                     <li><a href="{% url 'main:board'%}">노래 요청 게시판</a></li>
                     {% if user.is_authenticated %}
                     <li><a href="{% url 'users:mypage' request.user.id %}">마이페이지</a></li>
