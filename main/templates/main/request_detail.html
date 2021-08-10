@@ -67,8 +67,10 @@
 
             <p>{{comment.content}}</p>
             {% if user == comment.writer %}
-            <a href="{% url 'main:edit_comment' comment.id %}">수정하기&nbsp</a>
-            <a href="{% url 'main:delete_comment' comment.id %}">삭제하기</a>
+            <ul class="actions">
+                <li><a href="{% url 'main:edit_comment' comment.id %}"class = 'button'>수정&nbsp</a></li>
+                <li><a href="{% url 'main:delete_comment' comment.id %}"class = 'button'>삭제</a></li>
+            </ul>
             {% else %}
             
             {% endif %}
