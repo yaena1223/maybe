@@ -20,7 +20,7 @@
   <tbody>
     {% for board in boards %}
     <tr>
-      <th>{{ forloop.counter }}</th>
+      <th>{{ forloop.revcounter }}</th>
       <td scope="row"><a href="{%url 'main:request_detail' board.id%}">{{board.song}}</a></td>
       <td><a href="{%url 'main:request_detail' board.id%}">{{board.singer}}</a></td>
       <td style='color:white'>{{board.date}}</td>

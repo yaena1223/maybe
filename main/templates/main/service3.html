@@ -12,7 +12,9 @@
 	<header>
 		<div class="inner">
 			<h2 id="service_main_title">내가 부를 수 있는 노래는?</h2>
-            <h4 style="text-align:left" id = "service1_explain">&nbsp;&nbsp;<span id="user_username" style="text-transform:none;">{{user.username}}</span>님이 설정한 음역대로 소화 가능한 노래를 찾아 추천해줍니다.<br>&nbsp;&nbsp;총 8가지의 장르별로 본인이 부를 수 있는 노래를 미리 확인할 수 있습니다.<br>&nbsp;&nbsp;단, 남녀 듀엣 노래는 최저음은 남성 기준, 최고음은 여성 기준임을 유의하세요.<br></h4>
+            {% if user.is_authenticated %}<h4 style="text-align:left" id = "service1_explain"><span id="user_username" style="text-transform:none;">&nbsp;&nbsp;{{user.username}}</span>님이 설정한 음역대로 소화 가능한 노래를 찾아 추천해줍니다.<br>&nbsp;&nbsp;총 8가지의 장르별로 본인이 부를 수 있는 노래를 미리 확인할 수 있습니다.<br>&nbsp;&nbsp;단, 남녀 듀엣 노래는 최저음은 남성 기준, 최고음은 여성 기준임을 유의하세요.<br></h4>
+            {% else %}<h4 style="text-align:left" id = "service1_explain">&nbsp;&nbsp;본인이 설정한 음역대로 소화 가능한 노래를 찾아 추천해줍니다.<br>&nbsp;&nbsp;총 8가지의 장르별로 본인이 부를 수 있는 노래를 미리 확인할 수 있습니다.<br>&nbsp;&nbsp;단, 남녀 듀엣 노래는 최저음은 남성 기준, 최고음은 여성 기준임을 유의하세요.<br></h4>
+            {% endif %}
         </div>
     </header> 
 
