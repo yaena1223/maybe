@@ -44,7 +44,10 @@
                         </span>
                         <a href="{% url 'main:low_level1' %}">
                             {% if user.is_authenticated %}
-                            <div id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}님의</div>
+                            <div style="display: flex;">
+                                <span id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}</span>
+                                <span style="font-size: 32px; font-weight: bold;">님의</span>
+                            </div>
                             <h2 id = "service1_menu">최저음은?{% if user.is_authenticated %}<h3 id="low_result"></h3>{% endif %}</h2>
                             {% else %}
                             <h2 id = "service1_menu">나의 최저음은?{% if user.is_authenticated %}<h3 id="low_result"></h3>{% endif %}</h2>
@@ -61,7 +64,10 @@
                         </span>
                         <a href="{% url 'main:high_level1' %}">
                             {% if user.is_authenticated %}
-                            <div id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}님의</div>
+                            <div style="display: flex;">
+                                <span id="user_username" style="font-size: 32px; font-weight: bold;">{{user.username}}</span>
+                                <span style="font-size: 32px; font-weight: bold;">님의</span>
+                            </div>
                             <h2 id = "service1_menu">최고음은?{% if user.is_authenticated %}<h3 id="high_result"></h3>{% endif %}</h2>
                             {% else %}
                             <h2 id = "service1_menu">나의 최고음은?{% if user.is_authenticated %}<h3 id="high_result"></h3>{% endif %}</h2>

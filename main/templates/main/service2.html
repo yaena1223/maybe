@@ -4,7 +4,6 @@
 
 {% block content %}
 
-
 <div id = 'page-wrapper'>
     <!-- Wrapper -->
     <section id="wrapper">
@@ -152,13 +151,21 @@
 
         <div class = "music">
             <img class = "music_img" src = "{% static 'images/music.png'%}">
+            {% if user.is_authenticated %}
+            <div class="want_song"><span id="user_username" style="font-size: 20px;">{{user.username}}</span>님이 선택한 노래는?</div>
+            {% else %}
             <div class="want_song">당신이 선택한 노래는?</div>
+            {% endif %}
         </div>
         <hr>
 
         <div class = "play">
             <img class = "play_img" src = "{% static 'images/play.png'%}">
+            {% if user.is_authenticated %}
+            <p id='normal'><span id="user_username" style="font-size: 20px;">{{user.username}}</span>님이 부르고 싶은 노래의 음정은?</p>
+            {% else %}
             <p id='normal'>당신이 부르고 싶은 노래의 음정은?</p>
+            {% endif %}
         </div>
         <hr>
 
