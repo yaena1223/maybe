@@ -4328,11 +4328,15 @@ input::-moz-focus-inner {
 #main_title{
 	font-family: ablack;
 	font-weight :initial;
+
+}
+#main_subtitle{
+	font-family: dream4;
+	margin-top:-30px;
 }
 
 #main_explain{
 	font-family: dream4;
-	
 }
 
 #service_title{
@@ -4565,5 +4569,14 @@ input::-moz-focus-inner {
  #user{
 	font-size: 20px; 
 	font-weight: bold;
+	font-family: dream4;
+ }
+
+ #user_name{
+	font-family: dream4;
+	font-weight: bold;
+ }
+
+ #table_title{
 	font-family: dream4;
  }
