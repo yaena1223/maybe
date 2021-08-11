@@ -4601,3 +4601,27 @@ input::-moz-focus-inner {
  #table_title{
 	font-family: dream4;
  }
+
+ /* 글씨체 */
+#board_inner_title1,#service1_main_title,#service2_main_title,#service3_main_title,#service1_title1,#service1_title2,#service1_title3,
+#service2_title1,#service2_title2,#service2_title3,#service3_title1,#service3_title2,#service3_title3,#board_title1,#board_title2,
+#board_title3,#testmain_button,#beforetohigh_button,#beforetolow_button, 
+#gotoservice2_button,#low_result,#high_result, #gotoservice3_button,.low_result_nologin,#user_username{
+	font-family: dream4;{
+	font-family: dream4;
+ }
+ 
+ #board_inner_explain{
+	font-family: dream4;
+	font-weight: 100;
+ }
+ 
+ #board_p{
+	font-family: 'Do Hyeon', sans-serif;
+ }
+ 
+ #service1_step_p,#service2_step_p,#service3_step_p{
+	font-family: dream4 !important;
+	
+ }
+ 
