@@ -4118,13 +4118,13 @@ input::-moz-focus-inner {
 	/* visibility: hidden; */
 }
 #button1{
-
+	margin-left: 46%;
 	margin-top: 50px;
 }
-.button_submit{
-	display:flex;
-	justify-content: center;
+#button1:focus + .carousel{
+	visibility: visible;
 }
+
 /* Tiles */
 
 .tiles {
@@ -4394,7 +4394,7 @@ input::-moz-focus-inner {
 .service1_username{
 	display: flex;
 }
-#testmain_button, #beforetohigh_button, #beforetolow_button, #gotoservice2_button{
+#testmain_button, #beforetohigh_button, #beforetolow_button{
 	width: 250px;
 	font-family: 'dream4';
 }
@@ -4583,12 +4583,6 @@ input::-moz-focus-inner {
  padding: 30px;
 }
 
-.gotoservice2{
-    position: absolute;
-    top:320px;
-    padding: 30px;
-}
-
 .testmain{
  position: absolute;
  padding: 30px;
@@ -4763,10 +4757,4 @@ input::-moz-focus-inner {
 .service3_video iframe{
 	width:100%;
 	height:100%;
-}
-
-.service3_teacher h4{
-	font-family: dream4 !important;
-	font-weight: 50;
-	text-align:center;
 }

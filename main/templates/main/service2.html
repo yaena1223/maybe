@@ -8,13 +8,34 @@
     <!-- Wrapper -->
     <section id="wrapper">
         <header>
-            <div class="inner">
+            <!-- <div class="inner">
                 <h2 id="service_main_title">제 2강: 원하는 노래, 부르는 법을 알아보자</h2>
                 <h4 style="text-align:left" id = "service2_explain1">본인의 음정에 맞는 노래를 찾는 것이 얼마나 중요한지 알고 계신가요? 본인의 음정에 맞는 노래를 부를 때 그 노래를 정말 잘 부를 수 있고, 듣는 사람들로 하여금 노래를 잘한다고 느끼게 합니다. 자신의 최저 음정과 최고 음정을 입력하고 음역대에 최적화된 노래를 추천받아보세요.</h4>
+            </div> -->
+            <div class = "inner">
+                <h2 id="service2_main_title">제 2강: 원하는 노래, 부르는 법을 알아보자</h2>
+                <br>
+                <div class = "service2_instruction">
+                    <div class = "service2_step">
+                        <p><strong>Step 1</strong> 최저 음정, 최고 음정 선택하기</p>
+                        <p class = "p_gap_short">(단, 회원은 최근 테스트 결과 자동 저장)</p>
+                        <p class = "p_gap_short"><strong>Step 2</strong> 목록에 있는 부르고 싶은 노래 선택하기</p>
+                        <p class = "p_gap_short"><strong>Step 3</strong> 검사버튼 누르기</p>
+                        <p class = "p_gap_short"><strong>Step 4</strong> 노래 가창 가능 여부 확인하기</p>
+                        <p class = "p_gap_short"><strong>※</strong> 이성 노래 부를 때: <strong>±</strong> 5키 변환</p>
+                        <p class = "p_gap_short"><strong>※</strong> 검사 완료 후 '제 3강'으로 넘어가기</p>
+                    </div>
+                    <div class = "service2_video">
+                        <iframe width="560" height="500" src="https://www.youtube.com/embed/_yq_e8YwG4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <hr>
             </div>
         </header>
     </section>
-    
+
+    <br>
     <div class="content_second_select">
         <select class="content_second_selects" name="my_min" id="my_min">
             <option value="">--나의 최저 음정--</option>
@@ -176,6 +197,11 @@
             <br>
             <div class="result_detail"> </div>
         </div>
+        <hr>
+
+        <div class = "gotoservice3">
+            <a href = "{% url 'main:service3'%}"><button id="gotoservice3_button">제 3강으로 넘어가기</button></a>
+          </div>
     </div>
 </div>
 {% endblock %}
