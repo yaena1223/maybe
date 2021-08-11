@@ -2316,7 +2316,7 @@ input::-moz-focus-inner {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 25%;
 		}
 
 			.image.left img, .image.right img {
@@ -4158,8 +4158,8 @@ input::-moz-focus-inner {
       }
 
          .tiles article > .image img {
-            width: 500px;
-            height: 500px;
+            width: 350px;
+            height: 350px;
             
          }
 
@@ -4201,8 +4201,8 @@ input::-moz-focus-inner {
          position: absolute;
          top: 0;
          left: 0;
-         width: 500px;
-         height: 500px;
+         width: 350px;
+         height: 350px;
          padding: 1em;
          border-radius: 4px;
          border-bottom: 0;
@@ -4344,6 +4344,14 @@ input::-moz-focus-inner {
 	font-weight :initial;
 }
 
+#service_title{
+    font-size:18px;
+}
+
+#title1{
+    font-size:12px;
+}
+
 #service1_explain{
 	font-family: dream4 !important;
 	font-weight: 50;
@@ -4357,7 +4365,7 @@ input::-moz-focus-inner {
 
 .nav_lecture{
 	display:flex;
-	margin-right:3%;
+	margin-right:13%;
 	font-family: dream4;
  }
  
@@ -4524,10 +4532,8 @@ input::-moz-focus-inner {
  top:240px;
 }
 .img_voice{
-
-	position: relative;
-	text-align: center;
-	margin:auto
+    visibility:hidden;
+    height:30px;
  }
 
  #login, #signup{
