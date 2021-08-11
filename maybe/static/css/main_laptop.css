@@ -99,15 +99,14 @@ input::-moz-focus-inner {
 		box-sizing: inherit;
 	}
 
+
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto,
- cover;
-		background-attachment: fixed,
- fixed;
-		background-position: center,
- center;
+		background-size: auto, cover;
+		background-attachment: fixed;
+		background-position: center;
+		
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2355,7 +2354,8 @@ input::-moz-focus-inner {
 				width: 100%;
 			}
 		.img_voice img{
-			width: 1000px;
+			width: 95%;
+
 		}
 		
 
@@ -3358,89 +3358,21 @@ input::-moz-focus-inner {
 			text-transform: uppercase;
 		}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1439px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto,
- cover;
-				background-position: center,
- center;
-				margin-bottom: -6.5em;
+				
+				
+				background-image:  url("../images/lecture.jpg");
+				background-size:cover;
+				background-position: center;
+				margin-bottom: -7em;
+				margin-top: 0;
+				
 			}
 
 		}
 
-		@media screen and (max-width: 980px) {
-
-			#banner {
-				padding: 12em 3em 12.375em 3em ;
-				margin-bottom: -4.75em;
-			}
-
-				#banner .inner {
-					width: 100%;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner {
-				padding: 5em 2em 4.25em 2em ;
-				margin-bottom: -2.5em;
-			}
-
-				#banner .logo {
-					margin: 0 0 1em 0;
-				}
-
-					#banner .logo .icon {
-						font-size: 1.5em;
-					}
-
-				#banner h2 {
-					font-size: 1.5em;
-				}
-
-				#banner p {
-					font-size: 0.8em;
-				}
-
-		}
-
-		body.is-preload #banner .logo {
-			-moz-transform: translateY(0.5em);
-			-webkit-transform: translateY(0.5em);
-			-ms-transform: translateY(0.5em);
-			transform: translateY(0.5em);
-			opacity: 0;
-		}
-
-		body.is-preload #banner h2 {
-			opacity: 0;
-			-moz-transform: translateX(0.25em);
-			-webkit-transform: translateX(0.25em);
-			-ms-transform: translateX(0.25em);
-			transform: translateX(0.25em);
-			-moz-filter: blur(2px);
-			-webkit-filter: blur(2px);
-			-ms-filter: blur(2px);
-			filter: blur(2px);
-		}
-
-		body.is-preload #banner p {
-			opacity: 0;
-			-moz-transform: translateX(0.5em);
-			-webkit-transform: translateX(0.5em);
-			-ms-transform: translateX(0.5em);
-			transform: translateX(0.5em);
-			-moz-filter: blur(2px);
-			-webkit-filter: blur(2px);
-			-ms-filter: blur(2px);
-			filter: blur(2px);
 		}
 
 /* Wrapper */
@@ -4166,8 +4098,8 @@ input::-moz-focus-inner {
       }
 
          .tiles article > .image img {
-            width: 450px;
-            height: 450px;
+            width: 400px;
+            height: 400px;
             
          }
 
@@ -4209,8 +4141,8 @@ input::-moz-focus-inner {
          position: absolute;
          top: 0;
          left: 0;
-         width: 450px;
-         height: 450px;
+         width: 400px;
+         height: 400px;
          padding: 1em;
          border-radius: 4px;
          border-bottom: 0;
@@ -4331,6 +4263,7 @@ input::-moz-focus-inner {
 .title{
 	margin-top:15%;
 	position:relative;
+	text-align: center;
 }
 
 #main_title{
@@ -4512,27 +4445,35 @@ input::-moz-focus-inner {
 
 .low_result,.high_result{
  position: absolute;
- top:80px;
+ top:50px;
  padding: 30px; 
+ 
 }
 
 .beforetohigh{
 
  position: absolute;
- top:160px;
+ top:150px;
  padding: 30px;   
 }
 
 .beforetolow{
  position: absolute;
- top:160px;
+ top:150px;
  padding: 30px;
 }
 
 .testmain{
  position: absolute;
  padding: 30px;
- top:240px;
+ top:210px;
+
+}
+.gotoservice2{
+ position: absolute;
+ padding: 30px;
+ top:270px;
+
 }
 
 .img_voice{
@@ -4574,7 +4515,7 @@ input::-moz-focus-inner {
 
 #user_username{
 	font-family: dream4;
-	font-size: 32px;
+	font-size: 25px;
 	font-weight: bold;
  }
  
@@ -4592,3 +4533,155 @@ input::-moz-focus-inner {
  #table_title{
 	font-family: dream4;
  }
+
+ 
+
+ .p_gap_short{
+	margin-top: -35px;
+}
+.service1_instruction{
+
+   display:flex;
+   padding: 50px 0px;
+}
+
+.service1_step{
+   width:55%;
+   margin-right:4%;
+}
+
+.service1_video{
+   width:45%;
+
+}
+
+.service1_video iframe{
+   width:100%;
+   height:100%;
+}
+
+.service2_instruction{
+   display:flex;
+   padding: 50px 0px;
+}
+
+.service2_step{
+   width:55%;
+   margin-right:4%;
+}
+
+.service2_video{
+   width:45%;
+
+}
+
+.service2_video iframe{
+   width:100%;
+   height:100%;
+}
+
+
+.service3_instruction{
+   display:flex;
+   padding: 50px 0px;
+}
+
+.service3_step{
+   width:55%;
+   margin-right:4%;
+}
+
+.service3_video{
+   width:45%;
+
+}
+
+.service3_video iframe{
+   width:100%;
+   height:100%;
+}
+
+.service3_teacher h4{
+   font-family: dream4 !important;
+   font-weight: 50;
+   text-align:center;
+}
+
+#board_inner_title1,#service1_main_title,#service2_main_title,#service3_main_title{
+	font-family: dream4;
+}
+#board_inner_explain{
+	font-family: dream4;
+	font-weight: 100;
+}
+
+#board_p{
+	text-align: center;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 22px;
+}
+@media screen and (max-width: 1449px) {
+	.board_content{
+		margin-left: 14%;
+		margin-right: 14%;
+	}
+}
+@media screen and (max-width: 1399px) {
+	.board_content{
+		margin-left: 9%;
+		margin-right: 9%;
+	}
+}
+@media screen and (max-width: 1279px) {
+	.board_content{
+		margin-left: 11%;
+		margin-right: 11%;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.board_content{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+#service1_title1,#service1_title2,#service1_title3,#service2_title1,#service2_title2,#service2_title3,#service3_title1,
+#service3_title2,#service3_title3,#board_title1,#board_title2,#board_title3{
+	font-family: dream4;
+}
+
+#service1_step_p,#service2_step_p,#service3_step_p{
+	font-family: dream4 !important;
+	
+}
+
+#testmain_button{
+	width: 190px ;
+	font-family: dream4;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+}
+
+#beforetohigh_button,#beforetolow_button, #gotoservice2_button{
+	width:190px;
+	font-family: dream4;
+	font-weight: 100;
+	font-size: 13px;
+	text-align: center;
+}
+
+@media screen and (max-width: 1099px) {
+	#low_result,#high_result{
+		font-family: 'dream4';
+		font-size: 16px ;
+	}
+}
+
+#gotoservice3_button{
+	font-family: dream4;
+}
+
+.low_result_nologin{
+	font-family: dream4;
+}
