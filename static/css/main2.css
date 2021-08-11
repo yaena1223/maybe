@@ -4274,7 +4274,7 @@ input::-moz-focus-inner {
 
 
   #new{
-	font-family:  'Do Hyeon', sans-serif;
+	font-family:  'Do Hyeon', sanRs-serif;
 	font-size: 25px;
   }
 #board{
@@ -4418,6 +4418,7 @@ input::-moz-focus-inner {
 .audios{
     display:flex;
     justify-content: center;
+	width:450px;
    }
    .audios p{
       display: flex;
@@ -4466,17 +4467,17 @@ input::-moz-focus-inner {
  }
 
  .low_level1,.low_level2,.low_level3{
-	height: 600px;
+	height: 500px;
  }
  .low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
- width: 550px;
+ width: 475px;
  color: white;
  font-family:  'Do Hyeon', sans-serif;
  
 }
 
 #low_level1,#low_level2,#low_level3,#high_level1,#high_level2,#high_level3{
- font-size: 70px;
+ font-size: 30px;
  margin: 0;
 }
 
@@ -4510,27 +4511,41 @@ input::-moz-focus-inner {
 }
 .low_result,.high_result{
  position: absolute;
- top:80px;
- padding: 30px; 
+ top:60px;
+ padding: 10px;
 }
-.beforetohigh{
 
+.beforetohigh{
  position: absolute;
  top:160px;
- padding: 30px;   
+ font-size:13px; 
 }
 
 .beforetolow{
  position: absolute;
  top:160px;
- padding: 30px;
+ font-size:13px;
 }
 
 .testmain{
  position: absolute;
- padding: 30px;
  top:240px;
+ font-size:13px;
 }
+
+.testmain button{
+	width:145px;
+}
+
+.beforetohigh button{
+	width:145px;
+}
+
+.beforetolow button{
+	width:145px;
+}
+
+
 .img_voice{
     visibility:hidden;
     height:30px;

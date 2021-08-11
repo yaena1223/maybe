@@ -143,11 +143,13 @@
 
  <div class = "high_result">
    {% if user.is_authenticated %}
-   <div style="display: flex;">
-      <span id="user_username" style="font-size: 20px; font-weight: bold;">{{user.username}}</span>
+   <div class="high_result_login">
+      <span id="user_username">{{user.username}}</span>
       <span id="user">님의</span>
    </div>
    <div id="high_result"></div>
+   {% else %}
+   <div class="high_result_nologin">로그인하시면 자신의 음을 멋있게 저장할 수 있을걸요?</div>
    {% endif %}
  </div>
 {% endblock %}

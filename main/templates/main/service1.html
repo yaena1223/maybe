@@ -11,23 +11,23 @@
         <header>
             <div class="inner">
                 
-                <h2 id="service_main_title">음역대 테스트</h2>
+                <h2 id="service1_main_title">제 1강: 10초 안에 내 음역대 찾기</h2>
                 <br>
-                <h3 id = "service1_detail_title">필요성</h3>
-                <h4 style="text-align:left" id = "service1_explain">음역대란 사람의 목소리나 악기가 낼 수 있는 최저 음에서 최고 음까지의 범위를 말해요. 보통 우리가 노래를 부를 땐 우리 음역대의 높은 부분을 활용해요. 사람마다 음역대는 다 다른데 어떤 사람은 아래로 넓고, 어떤 사람은 위로 넓어요. 또, 위아래로 넓을 수도 있고 위아래로 좁을 수도 있어요. 자신의 음역대를 알고 노래의 옥타브를 알면, 어떤 노래를 부를 수 있는지 알게 되는 거죠. 진성과 가성을 따로 체크해보는 것도 좋지만 일단은 질러 봅시다!</h4>
+                <h3 id = "service1_detail_title1">필요성</h3>
+                <h4 id = "service1_explain1">음역대란 사람의 목소리나 악기가 낼 수 있는 최저 음에서 최고 음까지의 범위를 말해요. 보통 우리가 노래를 부를 땐 우리 음역대의 높은 부분을 활용해요. 사람마다 음역대는 다 다른데 어떤 사람은 아래로 넓고, 어떤 사람은 위로 넓어요. 또, 위아래로 넓을 수도 있고 위아래로 좁을 수도 있어요. 자신의 음역대를 알고 노래의 옥타브를 알면, 어떤 노래를 부를 수 있는지 알게 되는 거죠. 진성과 가성을 따로 체크해보는 것도 좋지만 일단은 질러 봅시다!</h4>
                 <br>
-                <h3 id = "service1_detail_title">주의사항</h3>
-                <h4 style="text-align:left" id = "service1_explain">자세는 곧은 자세를 준비해봐요. 서도 괜찮고 앉아도 괜찮아요. 눕거나 배배 꼰자세만 아니면 됩니다. 그리고 큰 목소리로 해야 정확한 결과가 나오니까 신고 당하지 않는, 방음이 아주 잘 되는 장소에서 해야 한다는 점 주의합시다.</h4>
-                <br>
+                <!-- <h3 id = "service1_detail_title2">주의사항</h3>
+                <h4 id = "service1_explain2">자세는 곧은 자세를 준비해봐요. 서도 괜찮고 앉아도 괜찮아요. 눕거나 배배 꼰자세만 아니면 됩니다. 그리고 큰 목소리로 해야 정확한 결과가 나오니까 신고 당하지 않는, 방음이 아주 잘 되는 장소에서 해야 한다는 점 주의합시다.</h4>
+                <br> -->
 
                 <table >
                     <tr>               
-                        <th style="text-align:center">남성 평균 음역대</th> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
-                        <th style="text-align:center">여성 평균 음역대</th>
+                        <th id="service1_man_avg">남성 평균 음역대</th> &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;
+                        <th id="service1_woman_avg">여성 평균 음역대</th>
                     </tr>
                     <tr>
-                        <td style="text-align:center">0옥타브 레 ~ 2옥타브 솔</td> &nbsp; &nbsp; &nbsp; &nbsp;
-                        <td style="text-align:center">0옥타브 파 ~ 대략(2옥타브 시~3옥타브 미)</td>
+                        <td id="service1_man_avg_value">0옥타브 레 ~ 2옥타브 솔</td> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <td id="service1_man_avg_value">0옥타브 파 ~ 3옥타브 도</td>
                     </tr>
                 </table>
             </div>
@@ -40,13 +40,13 @@
                 <section class="tiles">
                     <article class="style6">
                         <span class="image">
-                            <img src="{% static 'images/pic01.jpg'%}"  alt="" />
+                            <img id="service1_avg_image" src="{% static 'images/pic01.jpg'%}"  alt="" />
                         </span>
                         <a href="{% url 'main:low_level1' %}">
                             {% if user.is_authenticated %}
-                            <div style="display: flex;">
+                            <div class="service1_username">
                                 <span id="user_username" >{{user.username}}</span>
-                                <span id = "user_username">님의</span>
+                                <span id="user_username_plus">님의</span>
                             </div>
                             <h2 id = "service1_menu">최저음은?{% if user.is_authenticated %}<h3 id="low_result"></h3>{% endif %}</h2>
                             {% else %}
@@ -64,9 +64,9 @@
                         </span>
                         <a href="{% url 'main:high_level1' %}">
                             {% if user.is_authenticated %}
-                            <div style="display: flex;">
+                            <div class="service1_username">
                                 <span id="user_username">{{user.username}}</span>
-                                <span id = "user_username">님의</span>
+                                <span id ="user_username_plus">님의</span>
                             </div>
                             <h2 id = "service1_menu">최고음은?{% if user.is_authenticated %}<h3 id="high_result"></h3>{% endif %}</h2>
                             {% else %}
