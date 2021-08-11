@@ -9,8 +9,8 @@
     <section id="wrapper">
         <header>
             <div class="inner">
-                <h2 id="service_main_title">노래 가창 가능 여부</h2>
-                <h4 style="text-align:left" id = "service1_explain">본인의 음정에 맞는 노래를 찾는 것이 얼마나 중요한지 알고 계신가요? 본인의 음정에 맞는 노래를 부를 때 그 노래를 정말 잘 부를 수 있고, 듣는 사람들로 하여금 노래를 잘한다고 느끼게 합니다. 자신의 최저 음정과 최고 음정을 입력하고 음역대에 최적화된 노래를 추천받아보세요.</h4>
+                <h2 id="service_main_title">제 2강: 원하는 노래, 부르는 법을 알아보자</h2>
+                <h4 style="text-align:left" id = "service2_explain1">본인의 음정에 맞는 노래를 찾는 것이 얼마나 중요한지 알고 계신가요? 본인의 음정에 맞는 노래를 부를 때 그 노래를 정말 잘 부를 수 있고, 듣는 사람들로 하여금 노래를 잘한다고 느끼게 합니다. 자신의 최저 음정과 최고 음정을 입력하고 음역대에 최적화된 노래를 추천받아보세요.</h4>
             </div>
         </header>
     </section>
@@ -154,7 +154,7 @@
         <div class = "music">
             <img class = "music_img" src = "{% static 'images/music.png'%}">
             {% if user.is_authenticated %}
-            <div class="want_song"><span id="user_username" style="font-size: 20px;">{{user.username}}</span>님이 선택한 노래는?</div>
+            <div class="want_song"><span id="user_username">{{user.username}}</span>님이 선택한 노래는?</div>
             {% else %}
             <div class="want_song">당신이 선택한 노래는?</div>
             {% endif %}
@@ -164,20 +164,18 @@
         <div class = "play">
             <img class = "play_img" src = "{% static 'images/play.png'%}">
             {% if user.is_authenticated %}
-            <p id='normal'><span id="user_username" style="font-size: 20px;">{{user.username}}</span>님이 부르고 싶은 노래의 음정은?</p>
+            <p id='normal'><span id="user_username">{{user.username}}</span>님이 부르고 싶은 노래의 음정은?</p>
             {% else %}
             <p id='normal'>당신이 부르고 싶은 노래의 음정은?</p>
             {% endif %}
         </div>
         <hr>
-
-        <div>
-            <img class = "mic" src = "{% static 'images/mic.png'%}">
+        <div class="mic">
+            <img class = "mic_img" src = "{% static 'images/mic.png'%}">
             <div class="result_boolean">노래의 가창 가능여부를 알려줍니다.</div>
             <br>
             <div class="result_detail"> </div>
         </div>
-
     </div>
 </div>
 {% endblock %}

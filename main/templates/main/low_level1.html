@@ -4,10 +4,10 @@
 
 {% block content %}
 <div class = "testmain">
-   <a href = "{% url 'main:service1'%}"><button style="width: 250px ;font-family: 'dream4'; ">평균 음역대 확인하기</button></a>
+   <a href = "{% url 'main:service1'%}"><button id="testmain_button">평균 음역대 확인하기</button></a>
  </div>
  <div class = "beforetohigh">
-   <a href = "{% url 'main:high_level1'%}"><button style="width: 250px;font-family: 'dream4';">최고음 확인하기</button></a>
+   <a href = "{% url 'main:high_level1'%}"><button id="beforetohigh_button">최고음 확인하기</button></a>
  </div>
 
  <div class = "service1">
@@ -103,11 +103,13 @@
 
 <div class = "low_result">
    {% if user.is_authenticated %}
-   <div style="display: flex;">
-      <span id="user_username" style="font-size: 20px; font-weight: bold;">{{user.username}}</span>
+   <div class="low_result_login">
+      <span id="user_username">{{user.username}}</span>
       <span id = "user">님의</span>
   </div>
    <div id="low_result"></div>
+   {% else%}
+   <div class="low_result_nologin">로그인하시면 자신의 음을 멋있게 저장할 수 있을걸요?</div>
    {% endif %}
 </div>
 {% endblock %}

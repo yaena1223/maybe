@@ -13,7 +13,6 @@ function showList(){
     //carouselInner 초기화 작업
     button.setAttribute("disabled", "disabled");
     button.innerText = "새로고침 후 이용하세요";
-    button.style.marginLeft = "42%";
     let slideNumber = 1;
     // const initialIndicator = carouselIndicators.firstElementChild;
     // const initialInner = carouselInner.firstElementChild;

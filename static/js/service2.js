@@ -76,7 +76,7 @@ const totalSongList = [
     genre: "ballad",
   },
   {
-    name: "금요일에 만나요(Feat.장이정 Of HISTORY)",
+    name: "금요일에 만나요",
     singer: "아이유",
     min: "14",
     max: "26",
@@ -365,9 +365,9 @@ const totalSongList = [
     name: "marry me",
     singer: "마크튭,구윤회",
     min: "7",
-    max: "19",
+    max: "22",
     min_name: "0옥타브 시",
-    max_name: "2옥타브 솔",
+    max_name: "3옥타브 도",
     youtube: "https://www.youtube.com/results?search_query=마크튭+marry+me",
     image_name: "marry me",
     genre: "R&B",
@@ -968,13 +968,13 @@ function service2(){
       else{
         resultBoolean.innerText = "아쉽게도 당신은 이 노래를 소화하기 어렵습니다.";
         if(myMinCompare > element.min){
-          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(myMinCompare - element.min)}음정 더 낮게</strong> 부를 수 있어야 합니다.`;
+          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(myMinCompare - element.min)}키 더 낮게</strong> 부를 수 있어야 합니다.`;
         }
         if(myMaxCompare < element.max){
-          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(element.max - myMaxCompare)}음정 더 높게</strong> 부를 수 있어야 합니다.`;
+          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(element.max - myMaxCompare)}키 더 높게</strong> 부를 수 있어야 합니다.`;
         }
         if(myMinCompare > element.min && myMaxCompare < element.max){
-          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(myMinCompare - element.min)}음정 더 낮게, ${(element.max - myMaxCompare)}음정 더 높게</strong> 부를 수 있어야 합니다.`;
+          resultDetail.innerHTML = `이 노래를 소화하기 위해서는 <strong>${(myMinCompare - element.min)}키 더 낮게, ${(element.max - myMaxCompare)}키 더 높게</strong> 부를 수 있어야 합니다.`;
         }
       }
     }

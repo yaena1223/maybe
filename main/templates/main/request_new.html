@@ -9,25 +9,20 @@
 <section id="main">
     <div class="container">
    
-        <div id="content" style="margin-top: 150px;" >
+        <div id="content" >
+            <p id="new_p"> 노래 요청하기</p>
+            <hr>
 
-            
-
-                    <p style="font-family: 'Do Hyeon', sans-serif;font-size: 40px;"> 노래 요청하기</p>
-                    <hr>
-
-                <div>
-                    <form action="{%url 'main:request_create' %}" method="POST" enctype="multipart/form-data">
-                        {%csrf_token%}
-
-                        <p id = "new">노래  <input type="text"  name="song" ></p>
-                        <p id = "new">가수  <input type="text"  name="singer" ></p>
-                        <p id = "new">비고  <textarea name="extra" cols="30" rows="10"></textarea></p>
-                        <br>
-                        <button type="submit">제출</button>
-                    </form>
-                </div>    
-      
+            <div>
+                <form action="{%url 'main:request_create' %}" method="POST" enctype="multipart/form-data">
+                {%csrf_token%}
+                    <p id = "new">노래  <input type="text"  name="song" ></p>
+                    <p id = "new">가수  <input type="text"  name="singer" ></p>
+                    <p id = "new">비고  <textarea name="extra" cols="30" rows="10"></textarea></p>
+                    <br>
+                    <button type="submit">제출</button>
+                </form>
+            </div>    
         </div>
     </div>
 </section>
@@ -40,4 +35,4 @@
 </div>
 </div>
 {% endif %}
-{% endblock %} 
+{% endblock %}
