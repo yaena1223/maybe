@@ -10,12 +10,32 @@
 <!-- Wrapper -->
 <section id="wrapper">
 	<header>
-		<div class="inner">
+        <div class = "inner">
+            <h2 id="service3_main_title">제 3강: 쓰앵님이 추천하는 너의 노래는?</h2>
+            <br>
+            <div class = "service3_instruction">
+                <div class = "service3_step">
+                    <p><strong>Step 1</strong> 최저 음정, 최고 음정 선택하기</p>
+                    <p class = "p_gap_short">(단, 회원은 최근 테스트 결과 자동 저장)</p>
+                    <p class = "p_gap_short"><strong>Step 2</strong> 목록에 있는 부르고 싶은 노래 선택하기</p>
+                    <p class = "p_gap_short">(총 8개 장르 + 전체 장르 선택 가능)</p>
+                    <p class = "p_gap_short"><strong>Step 3</strong> 제출버튼 누르기</p>
+                    <p class = "p_gap_short"><strong>Step 4</strong> 소화 가능한 노래 확인하기</p>
+                    <p class = "p_gap_short"><strong>※</strong> 노래 사진 클릭 시 </p>
+                </div>
+                <div class = "service2_video">
+                    <iframe width="560" height="500" src="https://www.youtube.com/embed/_yq_e8YwG4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+		<!-- <div class="inner">
 			<h2 id="service_main_title">제 3강 : 쓰앵님이 추천하는 너의 노래는?</h2>
             {% if user.is_authenticated %}<h4 id = "service3_explain1"><span id="user_username" style="text-transform:none;">{{user.username}}</span>님이 설정한 음역대로 소화 가능한 노래를 찾아 추천해줍니다. 총 8가지의 장르별로 본인이 부를 수 있는 노래를 미리 확인할 수 있습니다. 단, 남녀 듀엣 노래는 최저음은 남성 기준, 최고음은 여성 기준임을 유의하세요.</h4>
             {% else %}<h4 id = "service3_explain1">본인이 설정한 음역대로 소화 가능한 노래를 찾아 추천해줍니다. 총 8가지의 장르별로 본인이 부를 수 있는 노래를 미리 확인할 수 있습니다. 단, 남녀 듀엣 노래는 최저음은 남성 기준, 최고음은 여성 기준임을 유의하세요.</h4>
             {% endif %}
-        </div>
+        </div> -->
     </header> 
 
     <div class="content_second_select">
@@ -76,7 +96,21 @@
             <option value="fork">포크/블루스</option>
         </select>
     </div>
-    <button id="button1">제출</button>
+
+    <div class="button_submit">
+        <button id="button1">제출</button>
+    </div>
+
+    <br><br>
+
+    <div class = "service3_teacher">
+        {% if user.is_authenticated %}
+            <h4>쓰앵님이 <span id="user_username" style="text-transform:none;">{{user.username}}</span>에게 추천합니다!</h4>
+        {% else %}
+            <p>&nbsp</p>
+        {% endif %}
+    </div>
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

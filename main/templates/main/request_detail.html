@@ -16,13 +16,13 @@
           <!--만약 유저가 좋아요를 눌렀다면 채운 하트로 변경-->
           {% if user in board.like_user_set.all %}
               <div class="alt-service-icon">
-                  <i class="fas fa-heart" id ="like-icon"></i>
+                  <i class="fas fa-heart" id ="like-icon"></i> 추천하기
               </div> 
           <!--아니면 비워진 하트-->
           {% else %}
 
               <div class="alt-service-icon">
-                  <i class="far fa-heart" id ="like-icon"></i> 
+                  <i class="far fa-heart" id ="like-icon"></i> 추천하기
               </div>
 
           {% endif %}
