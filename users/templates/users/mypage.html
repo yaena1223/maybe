@@ -31,12 +31,13 @@
       <th>{{ forloop.revcounter }}</th>
       <td scope="row"><a href="{%url 'main:request_detail' board.id%}">{{board.song}}</a></td>
       <td><a href="{%url 'main:request_detail' board.id%}">{{board.singer}}</a></td>
-      <td id="mypage_td">{{board.date}}</td>
-      <td id="mypage_td">{{board.like_count}}</td>
+      <td id="mypage_td" style = 'color:white;'>{{board.date}}</td>
+      <td id="mypage_td" style = 'color:white;'>{{board.like_count}}</td>
     </tr>   
     {% endfor %}
   </tbody>
 </table>
 </div>
 </section>
+<br><br><br><br><br><br><br><br>
 {% endblock  %}
