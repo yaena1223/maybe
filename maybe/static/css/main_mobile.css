@@ -83,7 +83,7 @@ input::-moz-focus-inner {
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 599px) {
 
 		html, body {
 			min-width: 320px;
@@ -163,7 +163,7 @@ input::-moz-focus-inner {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			body, input, select, textarea {
 				font-size: 12pt;
@@ -1600,7 +1600,7 @@ input::-moz-focus-inner {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			.row {
 				display: flex;
@@ -2144,7 +2144,7 @@ input::-moz-focus-inner {
 					width: calc(25% - 0.375em);
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			form > .fields {
 				width: calc(100% + 3em);
@@ -2477,7 +2477,7 @@ input::-moz-focus-inner {
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -2648,7 +2648,7 @@ input::-moz-focus-inner {
 				padding-left: 0.75em;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
 				display: none;
@@ -2869,7 +2869,7 @@ input::-moz-focus-inner {
 			opacity: 0.25;
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			input[type="submit"],
 			input[type="reset"],
@@ -2948,7 +2948,7 @@ input::-moz-focus-inner {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			.features {
 				display: block;
@@ -3716,7 +3716,7 @@ input::-moz-focus-inner {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 599px) {
 
 			.wrapper.spotlight .inner {
 				display: block;
@@ -3865,7 +3865,7 @@ input::-moz-focus-inner {
 
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 599px) {
 
 		#footer .inner .copyright li {
 			border-left: 0;
@@ -4403,7 +4403,6 @@ input::-moz-focus-inner {
  top:240px;
 }
 .img_voice{
-	display: none;
 	position: relative;
 	text-align: center;
 	margin:auto
@@ -4720,7 +4719,7 @@ input::-moz-focus-inner {
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 599px) {
 
 	#header nav a[href="#menu"] {
 		width: 4em;
@@ -4785,7 +4784,7 @@ input::-moz-focus-inner {
 		width: 60px;
 	}
 	.nav_lecture_js{
-		margin: 0px 5px;
+		margin: 1px 5px 0px 5px;
 	}
 	.nav_lecture_js a{
 		font-size: 10px;
@@ -4860,10 +4859,13 @@ input::-moz-focus-inner {
 	}
 	.service1_video{
 		width: 100%;
-		height: 300px;
+		height: 200px;
 	}
 	#service1_step_p{
 		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice{
+		display: none;
 	}
 	#service1_man_avg_value, #service1_woman_avg_value{
 		font-size: 8px;
@@ -4955,7 +4957,7 @@ input::-moz-focus-inner {
 	}
 	.service2_video{
 		width: 100%;
-		height: 325px;
+		height: 200px;
 	}
 	#service2_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -4985,7 +4987,7 @@ input::-moz-focus-inner {
 	}
 	.service3_video{
 		width: 100%;
-		height: 300px;
+		height: 200px;
 	}
 	#service3_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -5025,6 +5027,10 @@ input::-moz-focus-inner {
 	/* request_detail */
 	/* request_edit */
 	/* edit_comment */
+	/* account*/
+	.holy input{
+		padding: 0px 10px;
+	}
 }
 @media screen and (min-width:321px) and (max-width: 375px){
 	/* navbar */
@@ -5033,7 +5039,7 @@ input::-moz-focus-inner {
 		width: 80px;
 	}
 	.nav_lecture_js{
-		margin: 0px 7px;
+		margin: 1px 7px 0px 7px;
 	}
 	.nav_lecture_js a{
 		font-size: 14.9px;
@@ -5108,10 +5114,13 @@ input::-moz-focus-inner {
 	}
 	.service1_video{
 		width: 100%;
-		height: 325px;
+		height: 200px;
 	}
 	#service1_step_p{
 		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice{
+		display: none;
 	}
 	#service1_man_avg_value, #service1_woman_avg_value{
 		font-size: 8px;
@@ -5203,7 +5212,7 @@ input::-moz-focus-inner {
 	}
 	.service2_video{
 		width: 100%;
-		height: 325px;
+		height: 200px;
 	}
 	#service2_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -5233,7 +5242,7 @@ input::-moz-focus-inner {
 	}
 	.service3_video{
 		width: 100%;
-		height: 325px;
+		height: 200px;
 	}
 	#service3_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -5273,6 +5282,10 @@ input::-moz-focus-inner {
 	/* request_detail */
 	/* request_edit */
 	/* edit_comment */
+	/* account*/
+	.holy input{
+		padding: 0px 15px;
+	}
 }
 @media screen and (min-width:376px) and (max-width: 425px){
 	/* navbar */
@@ -5281,7 +5294,7 @@ input::-moz-focus-inner {
 		width: 90px;
 	}
 	.nav_lecture_js{
-		margin: 0px 7px;
+		margin: 2px 7px 0px 7px;
 	}
 	.nav_lecture_js a{
 		font-size: 18px;
@@ -5423,10 +5436,13 @@ input::-moz-focus-inner {
 	}
 	.service1_video{
 		width: 100%;
-		height: 375px;
+		height: 225px;
 	}
 	#service1_step_p{
 		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice{
+		display: none;
 	}
 	#service1_man_avg_value, #service1_woman_avg_value{
 		font-size: 10px;
@@ -5450,7 +5466,7 @@ input::-moz-focus-inner {
 	}
 	.service2_video{
 		width: 100%;
-		height: 325px;
+		height: 225px;
 	}
 	#service2_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -5480,7 +5496,7 @@ input::-moz-focus-inner {
 	}
 	.service3_video{
 		width: 100%;
-		height: 400px;
+		height: 225px;
 	}
 	#service3_step_p{
 		font-size: 20px;/*적용 안됨*/
@@ -5520,4 +5536,524 @@ input::-moz-focus-inner {
 	/* request_detail */
 	/* request_edit */
 	/* edit_comment */
+	/* account*/
+	.holy input{
+		padding: 0px 20px;
+	}
+}
+@media screen and (min-width:426px) and (max-width: 480px){
+	/* navbar */
+	#vocal{
+		font-size: 18px;
+		width: 90px;
+	}
+	.nav_lecture_js{
+		margin: 2px 10px 0px 10px;
+	}
+	.nav_lecture_js a{
+		font-size: 18px;
+	}
+	/* mainpage - title*/
+	#main_title{
+		font-size: 40px;
+	}
+	#main_subtitle{
+		font-size: 18px;
+	}
+	#main_explain{
+		font-size: 18px;
+	}
+	/* mainpage - service*/
+	.p_gap_short{
+		margin-top: -20px;
+	}
+	#service_title{
+		font-size: 14.7px;
+	}
+	#service1_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#service1_title2{
+		font-size: 13px;
+	}
+	#service1_title3{
+		font-size: 13px;
+	}
+	#service2_title1{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#service2_title2{
+		font-size: 13px;
+	}
+	#service2_title3{
+		font-size: 13px;
+	}
+	#service3_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#service3_title2{
+		font-size: 13px;
+	}
+	#service3_title3{
+		font-size: 13px;
+	}
+	#board_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#board_title2{
+		font-size: 13px;
+	}
+	#board_title3{
+		font-size: 13px;
+	}
+	/* 서비스 1 */
+	#service1_main_title{
+		font-size: 10px;/*적용 안됨*/
+	}
+	.service1_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service1_step{
+		width: 100%;
+	}
+	.service1_video{
+		width: 100%;
+		height: 250px;
+	}
+	#service1_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice{
+		display: none;
+	}
+	#service1_man_avg, #service1_woman_avg{
+		font-size: 16px;
+	}
+	#service1_man_avg_value, #service1_woman_avg_value{
+		font-size: 14px;
+	}
+	.tiles article > .image img{
+		height: 450px;
+	}
+	.tiles article > .image:before{
+		height: 450px;
+	}
+	.tiles article > a{
+		height: 450px;
+	}
+	/* low-level / high-level*/
+	.low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
+		width: 320px;
+	}
+	#low_level1,#low_level2,#low_level3,#high_level1,#high_level2,#high_level3{
+		font-size: 60px;
+	}
+	.low_result_login, .high_result_login, .low_result_nologin, .high_result_nologin{
+		font-size: 20px; /*적용안됨*/
+	}
+	#low_result, #high_result{
+		font-size: 20px;
+	}
+	.service1{
+		margin-top: 300px;
+	}
+	.audios p{
+		font-size: 18px;
+	}
+	.audios audio{
+		width: 180px;
+	}
+	.fake button{
+		width: 40px;
+	}
+	.before button{
+		width: 40px;
+	}
+	.before2 button{
+		width: 40px;
+	}
+	.next button{
+		width: 40px;
+	}
+	.next2 button{
+		width: 40px;
+	}
+	.low_result,.high_result{
+		position: absolute;
+		top:40px;
+		padding: 30px; 
+		margin-left: 16%;
+	}
+	.beforetohigh{
+		position: absolute;
+		top: 120px;
+		padding: 30px;   
+		margin-left: 16%;
+	}
+	.beforetolow{
+		position: absolute;
+		top: 120px;
+		padding: 30px;
+		margin-left: 16%;
+	}
+	.gotoservice2{
+		position: absolute;
+		top: 1020px;
+		padding: 30px;
+		width: 100%;
+		margin-left: 16%;
+	}
+   .testmain{
+		position: absolute;
+		padding: 30px;
+		top: 190px;
+		margin-left: 16%;
+	}
+	/* 서비스 2 */
+	.service2_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service2_step{
+		width: 100%;
+	}
+	.service2_video{
+		width: 100%;
+		height: 250px;
+	}
+	#service2_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	.want_song{
+		font-size: 22px;
+	}
+	#normal{
+		font-size: 18px;
+	}
+	.result_boolean{
+		font-size: 18px;
+	}
+	.result_detail{
+		font-size: 20px;
+	}
+	#btn-change-text{
+		width: 80px;
+	}
+	/* 서비스 3 */
+	.service3_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service3_step{
+		width: 100%;
+	}
+	.service3_video{
+		width: 100%;
+		height: 250px;
+	}
+	#service3_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	#button1{
+		width: 140px;
+	}
+	.carousel{
+		width: 90%;
+	}
+	.carousel-indicators button{
+		margin-top: -60px;
+	}
+	.service3_teacher{
+		font-size: 14px;
+	}
+	/* 게시판 */
+	#board_inner_explain{
+		font-size: 16px;
+	}
+	#board_p{
+		margin-top: 50px;
+		margin-bottom: -100px;
+		font-size: 24px;
+	}
+	#board{
+		width: 18%;
+		font-size: 12px;
+	}
+	#board:first-child{
+		width: 13%;
+	}
+	.board_content td{
+		font-size: 10px;
+	}
+	/* request_new */
+	/* request_detail */
+	/* request_edit */
+	/* edit_comment */
+	/* account*/
+	.holy input{
+		padding: 0px 25px;
+	}
+}
+@media screen and (min-width:481px) and (max-width: 599px){
+	/* navbar */
+	#vocal{
+		font-size: 20px;
+		width: 100px;
+	}
+	.nav_lecture_js{
+		margin: 2px 10px 0px 10px;
+	}
+	.nav_lecture_js a{
+		font-size: 20px;
+	}
+	/* mainpage - title*/
+	#main_title{
+		font-size: 48px;
+	}
+	#main_subtitle{
+		font-size: 20px;
+	}
+	#main_explain{
+		font-size: 18px;
+	}
+	/* mainpage - service*/
+	.p_gap_short{
+		margin-top: -20px;
+	}
+	#service_title{
+		font-size: 16px;
+	}
+	#service1_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#service1_title2{
+		font-size: 13px;
+	}
+	#service1_title3{
+		font-size: 13px;
+	}
+	#service2_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#service2_title2{
+		font-size: 13px;
+	}
+	#service2_title3{
+		font-size: 13px;
+	}
+	#service3_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#service3_title2{
+		font-size: 13px;
+	}
+	#service3_title3{
+		font-size: 13px;
+	}
+	#board_title1{
+		font-size: 17px;
+		font-weight: bold;
+	}
+	#board_title2{
+		font-size: 13px;
+	}
+	#board_title3{
+		font-size: 13px;
+	}
+	/* 서비스 1 */
+	#service1_main_title{
+		font-size: 10px;/*적용 안됨*/
+	}
+	.service1_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service1_step{
+		width: 100%;
+	}
+	.service1_video{
+		width: 100%;
+		height: 300px;
+	}
+	#service1_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice{
+		display: none;
+	}
+	#service1_man_avg, #service1_woman_avg{
+		font-size: 16px;
+	}
+	#service1_man_avg_value, #service1_woman_avg_value{
+		font-size: 16px;
+	}
+	.tiles article > .image img{
+		height: 520px;
+	}
+	.tiles article > .image:before{
+		height: 520px;
+	}
+	.tiles article > a{
+		height: 520px;
+	}
+	/* low-level / high-level*/
+	.low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
+		width: 360px;
+	}
+	#low_level1,#low_level2,#low_level3,#high_level1,#high_level2,#high_level3{
+		font-size: 64px;
+	}
+	.low_result_login, .high_result_login, .low_result_nologin, .high_result_nologin{
+		font-size: 20px; /*적용안됨*/
+	}
+	#low_result, #high_result{
+		font-size: 20px;
+	}
+	.service1{
+		margin-top: 300px;
+	}
+	.audios p{
+		font-size: 20px;
+	}
+	.audios audio{
+		width: 180px;
+	}
+	.fake button{
+		width: 40px;
+	}
+	.before button{
+		width: 40px;
+	}
+	.before2 button{
+		width: 40px;
+	}
+	.next button{
+		width: 40px;
+	}
+	.next2 button{
+		width: 40px;
+	}
+	.low_result,.high_result{
+		position: absolute;
+		top:40px;
+		padding: 30px; 
+		margin-left: 20%;
+	}
+	.beforetohigh{
+		position: absolute;
+		top: 120px;
+		padding: 30px;   
+		margin-left: 20%;
+	}
+	.beforetolow{
+		position: absolute;
+		top: 120px;
+		padding: 30px;
+		margin-left: 20%;
+	}
+	.gotoservice2{
+		position: absolute;
+		top: 1060px;
+		padding: 30px;
+		width: 100%;
+		margin-left: 20%;
+	}
+   .testmain{
+		position: absolute;
+		padding: 30px;
+		top: 190px;
+		margin-left: 20%;
+	}
+	/* 서비스 2 */
+	.service2_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service2_step{
+		width: 100%;
+	}
+	.service2_video{
+		width: 100%;
+		height: 300px;
+	}
+	#service2_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	.want_song{
+		font-size: 22px;
+	}
+	#normal{
+		font-size: 18px;
+	}
+	.result_boolean{
+		font-size: 18px;
+	}
+	.result_detail{
+		font-size: 22px;
+	}
+	#btn-change-text{
+		width: 80px;
+	}
+	/* 서비스 3 */
+	.service3_instruction{
+		display: inline;
+		padding: 20px 0px;
+	}
+	.service3_step{
+		width: 100%;
+	}
+	.service3_video{
+		width: 100%;
+		height: 300px;
+	}
+	#service3_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	#button1{
+		width: 140px;
+	}
+	.carousel{
+		width: 90%;
+	}
+	.carousel-indicators button{
+		margin-top: 30px;
+	}
+	.service3_teacher{
+		font-size: 12px;
+	}
+	/* 게시판 */
+	#board_inner_explain{
+		font-size: 16px;
+	}
+	#board_p{
+		margin-top: 50px;
+		margin-bottom: -100px;
+		font-size: 24px;
+	}
+	#board{
+		width: 18%;
+		font-size: 10px;
+	}
+	#board:first-child{
+		width: 13%;
+	}
+	.board_content td{
+		font-size: 12px;
+	}
+	/* request_new */
+	/* request_detail */
+	/* request_edit */
+	/* edit_comment */
+	/* account*/
+	.holy input{
+		padding: 0px 30px;
+	}
 }

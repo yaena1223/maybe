@@ -4602,12 +4602,13 @@ input::-moz-focus-inner {
 }
 
 .img_voice{
-	display:none;
 	position: relative;
 	text-align: center;
 	margin:auto
  }
-
+.img_voice img{
+	width: 680px;
+}
  #login, #signup{
 	 font-family: ablack;
 	 margin-bottom: 0;
@@ -4871,4 +4872,216 @@ input::-moz-focus-inner {
  .low_result_nologin{
 	font-family: dream4;
  }
-
+ @media screen and (min-width: 600px) and (max-width: 767px){
+	/* navbar */
+	#vocal{
+		font-size: 20px;
+		width: 100px;
+	}
+	.nav_lecture_js{
+		margin: 2px 10px 0px 10px;
+	}
+	.nav_lecture_js a{
+		font-size: 20px;
+	}
+	/* mainpage - title*/
+	#main_title{
+		font-size: 56px;
+	}
+	#main_subtitle{
+		font-size: 24px;
+	}
+	#main_explain{
+		font-size: 22px;
+	}
+	/* mainpage - service*/
+	.p_gap_short{
+		margin-top: -20px;
+	}
+	#service_title{
+		font-size: 13px;
+	}
+	#service1_title1{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#service1_title2{
+		font-size: 12px;
+	}
+	#service1_title3{
+		font-size: 12px;
+	}
+	#service2_title1{
+		font-size: 13px;
+		font-weight: bold;
+	}
+	#service2_title2{
+		font-size: 11px;
+	}
+	#service2_title3{
+		font-size: 11px;
+	}
+	#service3_title1{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#service3_title2{
+		font-size: 12px;
+	}
+	#service3_title3{
+		font-size: 12px;
+	}
+	#board_title1{
+		font-size: 15px;
+		font-weight: bold;
+	}
+	#board_title2{
+		font-size: 12px;
+	}
+	#board_title3{
+		font-size: 12px;
+	}
+	/* 서비스 1 */
+	#service1_main_title{
+		font-size: 10px;/*적용 안됨*/
+	}
+	.service1_instruction{
+		padding: 20px 0px;
+	}
+	.service1_step{
+		width: 58%;
+	}
+	.service1_video{
+		width: 42%;
+		margin-top: 40px;
+		height: 200px;
+	}
+	#service1_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	.img_voice img{
+		width: 550px;
+	}
+	#service1_man_avg, #service1_woman_avg{
+		font-size: 16px;
+	}
+	#service1_man_avg_value, #service1_woman_avg_value{
+		font-size: 16px;
+	}
+	.tiles{
+		display: flex;
+		justify-content: center;
+	}
+	.tiles article > .image img{
+		height: 320px;
+	}
+	.tiles article > .image:before{
+		height: 320px;
+	}
+	.tiles article > a{
+		height: 320px;
+	}
+	/* low-level / high-level*/
+	.low_level1,.low_level2,.low_level3,.high_level1,.high_level2,.high_level3{
+		margin-top: 80px;
+		width: 440px;
+	}
+	.beforetohigh{
+		position: absolute;
+		top: 80px;
+		padding: 30px;   
+	}
+	.beforetolow{
+		position: absolute;
+		top: 80px;
+		padding: 30px;
+	}
+	.gotoservice2{
+		position: absolute;
+		top: 140px;
+		padding: 30px;
+	}
+   .testmain{
+		position: absolute;
+		padding: 30px;
+		top: 110px;
+	}
+	/* 서비스 2 */
+	.service2_instruction{
+		padding: 20px 0px;
+	}
+	.service2_step{
+		width: 58%;
+	}
+	.service2_video{
+		width: 42%;
+		height: 200px;
+	}
+	#service2_step_p{
+		font-size: 20px;
+	}
+	.want_song{
+		font-size: 22px;
+	}
+	#normal{
+		font-size: 18px;
+	}
+	.result_boolean{
+		font-size: 18px;
+	}
+	.result_detail{
+		font-size: 18px;
+	}
+	#btn-change-text{
+		width: 80px;
+	}
+	/* 서비스 3 */
+	.service3_instruction{
+		padding: 20px 0px;
+	}
+	.service3_step{
+		width: 58%;
+	}
+	.service3_video{
+		width: 42%;
+		height: 200px;
+	}
+	#service3_step_p{
+		font-size: 20px;/*적용 안됨*/
+	}
+	#button1{
+		width: 180px;
+	}
+	.carousel{
+		width: 80%;
+	}
+	.carousel-indicators button{
+		margin-top: 300px;
+	}
+	.service3_teacher{
+		font-size: 16px;
+	}
+	/* 게시판 */
+	#board_inner_explain{
+		font-size: 16px;
+	}
+	#board_p{
+		margin-top: 50px;
+		margin-bottom: -100px;
+		font-size: 24px;
+	}
+	#board{
+		width: 18%;
+		font-size: 10px;
+	}
+	#board:first-child{
+		width: 13%;
+	}
+	.board_content td{
+		font-size: 12px;
+	}
+	/* request_new */
+	/* request_detail */
+	/* request_edit */
+	/* edit_comment */
+}
