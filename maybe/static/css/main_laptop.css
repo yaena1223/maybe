@@ -217,7 +217,7 @@ input::-moz-focus-inner {
 				transition: background-color 0.2s ease-in-out;
 				border-radius: 100%;
 				border: solid 2px rgba(255, 255, 255, 0.125);
-				content: '▷';
+				content: '��';
 				display: inline-block;
 				font-size: 1.2em;
 				height: 2em;
@@ -3052,7 +3052,7 @@ input::-moz-focus-inner {
 					}
 
 					#header nav a[href="#menu"]:before {
-						content: '≡';
+						content: '��';
 						line-height: inherit;
 					}
 
@@ -3373,6 +3373,7 @@ input::-moz-focus-inner {
 
 		}
 
+		}
 
 /* Wrapper */
 
@@ -4028,7 +4029,7 @@ input::-moz-focus-inner {
 }
 
 
-/* 서비스 3 */
+/* �쒕퉬�� 3 */
 
 .content_second_select{
 	margin: 0% 20%;
@@ -4057,8 +4058,8 @@ input::-moz-focus-inner {
 	/* visibility: hidden; */
 }
 #button1{
-	margin-left: 46%;
-	margin-top: 50px;
+	text-align: center;
+
 }
 #button1:focus + .carousel{
 	visibility: visible;
@@ -4445,8 +4446,8 @@ input::-moz-focus-inner {
 .low_result,.high_result{
  position: absolute;
  top:50px;
- padding: 30px; 
- 
+ padding-top: 40px; 
+ padding-left: 20px;
 }
 
 .beforetohigh{
@@ -4514,7 +4515,7 @@ input::-moz-focus-inner {
 
 #user_username{
 	font-family: dream4;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
  }
  
@@ -4605,7 +4606,9 @@ input::-moz-focus-inner {
    font-weight: 50;
    text-align:center;
 }
-
+#board_inner_title1{
+	margin-top: 60px;
+}
 #board_inner_title1,#service1_main_title,#service2_main_title,#service3_main_title{
 	font-family: dream4;
 }
@@ -4681,6 +4684,51 @@ input::-moz-focus-inner {
 	font-family: dream4;
 }
 
-.low_result_nologin{
+.low_result_nologin,.high_result_nologin{
 	font-family: dream4;
+	position: relative;
+ 	top:-20px;
+}
+
+#new_p,#edit_p{
+	margin-top: 100px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.table{
+	font-family:"Source Sans Pro", Helvetica, sans-serif;
+}
+
+#mypage_user{
+	font-family: dream4;
+}
+
+h4{
+	font-family: dream4;
+}
+
+#service1_title1,#service2_title1,#service3_title1,#board_title1{
+	font-size:25px;
+}
+
+
+
+#like-icon{
+	color: red;
+}
+#content{
+	margin-top: 100px;
+	font-family:'Do Hyeon', sans-serif; 
+	font-size: 20px;
+}
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+#mypage_user_key, #mypage_user_value{
+	display: flex;
 }
