@@ -6112,7 +6112,7 @@ input::-moz-focus-inner {
 		padding: 0px 30px;
 	}
 	.testcaution{
-		margin: 0px 30px;
+		margin-left: auto; margin-right: auto;
 	}
 	.testcaution hr{
 		margin-top: 100px;
@@ -6121,3 +6121,20 @@ input::-moz-focus-inner {
 		text-decoration: underline;
 	}
 }
+
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
+}
+
+ 
+#service1_step_p,#service2_step_p,#service3_step_p{
+	font-family: dream4 !important;
+	font-weight: 100;
+ }
+ 
