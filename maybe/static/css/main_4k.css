@@ -4553,8 +4553,6 @@ input::-moz-focus-inner {
 .next{
  display:inline;
 }
-
-
 .before{
  display:inline;
 }
@@ -4572,31 +4570,43 @@ input::-moz-focus-inner {
  padding: 30px; 
 }
 .beforetohigh{
-
  position: absolute;
  top:160px;
  padding: 30px;   
 }
-
 .beforetolow{
  position: absolute;
  top:160px;
  padding: 30px;
 }
-
+.testcaution{
+ position: absolute;
+ top:320px;
+ padding: 30px;
+ margin-left: 10px;
+ width: 640px;
+}
+.testcaution hr{
+	margin-top: 100px;
+}
+.testcaution h5{
+	text-align: left;
+	width: auto;
+}
+#service1_alt{
+	text-decoration: underline;
+}
 .gotoservice2{
     position: absolute;
     top:320px;
     padding: 30px;
 }
-
 .testmain{
  position: absolute;
  padding: 30px;
  top:240px;
 }
 .img_voice{
-
 	position: relative;
 	text-align: center;
 	margin:auto
@@ -4717,7 +4727,6 @@ input::-moz-focus-inner {
 
 .service1_video{
 	width:45%;
-
 }
 
 .service1_video iframe{
@@ -4798,6 +4807,7 @@ input::-moz-focus-inner {
  #testmain_button{
  font-family: dream4;
  }
+ 
  #beforetohigh_button,#beforetolow_button, #gotoservice2_button{
  font-family: dream4;
  }

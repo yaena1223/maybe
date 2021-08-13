@@ -5031,6 +5031,16 @@ input::-moz-focus-inner {
 	.holy input{
 		padding: 0px 10px;
 	}
+	.testcaution{
+		margin: 0px 30px;
+		font-size: 9px;
+	}
+	.testcaution hr{
+		margin-top: 100px;
+	}
+	#service1_alt{
+		text-decoration: underline;
+	}
 }
 @media screen and (min-width:321px) and (max-width: 375px){
 	/* navbar */
@@ -5286,6 +5296,16 @@ input::-moz-focus-inner {
 	.holy input{
 		padding: 0px 15px;
 	}
+	.testcaution{
+		margin: 0px 30px;
+		font-size: 9px;
+	}
+	.testcaution hr{
+		margin-top: 100px;
+	}
+	#service1_alt{
+		text-decoration: underline;
+	}
 }
 @media screen and (min-width:376px) and (max-width: 425px){
 	/* navbar */
@@ -5539,6 +5559,16 @@ input::-moz-focus-inner {
 	/* account*/
 	.holy input{
 		padding: 0px 20px;
+	}
+	.testcaution{
+		margin: 0px 30px;
+		font-size: 10px;
+	}
+	.testcaution hr{
+		margin-top: 100px;
+	}
+	#service1_alt{
+		text-decoration: underline;
 	}
 }
 @media screen and (min-width:426px) and (max-width: 480px){
@@ -5798,6 +5828,16 @@ input::-moz-focus-inner {
 	.holy input{
 		padding: 0px 25px;
 	}
+	.testcaution{
+		margin: 0px 30px;
+		font-size: 12px;
+	}
+	.testcaution hr{
+		margin-top: 100px;
+	}
+	#service1_alt{
+		text-decoration: underline;
+	}
 }
 @media screen and (min-width:481px) and (max-width: 599px){
 	/* navbar */
@@ -6055,5 +6095,14 @@ input::-moz-focus-inner {
 	/* account*/
 	.holy input{
 		padding: 0px 30px;
+	}
+	.testcaution{
+		margin: 0px 30px;
+	}
+	.testcaution hr{
+		margin-top: 100px;
+	}
+	#service1_alt{
+		text-decoration: underline;
 	}
 }
