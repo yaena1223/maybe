@@ -4583,7 +4583,7 @@ input::-moz-focus-inner {
  position: absolute;
  top:320px;
  padding: 30px;
- margin-left: 10px;
+ margin-left: auto; margin-right: auto;
  width: 640px;
  font-size: 20px;
 }
@@ -4824,3 +4824,13 @@ input::-moz-focus-inner {
  .low_result_nologin{
 	font-family: dream4;
  }
+
+ 
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
+}

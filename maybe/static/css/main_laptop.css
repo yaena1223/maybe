@@ -4754,9 +4754,23 @@ tbody{
 	display: flex;
 }
 .testcaution{
-	margin-left: 30px;
+	margin-left: auto; margin-right: auto;
 	width: 500px;
 }
 #service1_alt{
 	text-decoration: underline;
+}
+
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
+}
+
+#user_username_plus{
+	font-family: dream4;
 }
