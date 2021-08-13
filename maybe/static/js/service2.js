@@ -1205,5 +1205,5 @@ function service2(){
 
 function MovetoResult(seq){
   var offset = $("." + seq).offset();
-  $('html, body').animate({scrollTop : offset.top - 150}, 100);
+  $('html, body').animate({scrollTop : offset.top - 100}, 100);
 }
