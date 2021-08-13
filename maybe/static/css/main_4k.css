@@ -4585,6 +4585,7 @@ input::-moz-focus-inner {
  padding: 30px;
  margin-left: 10px;
  width: 640px;
+ font-size: 20px;
 }
 .testcaution hr{
 	margin-top: 100px;
