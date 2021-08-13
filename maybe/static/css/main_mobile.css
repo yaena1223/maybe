@@ -5044,6 +5044,11 @@ input::-moz-focus-inner {
 	#service1_alt{
 		text-decoration: underline;
 	}
+	/* mypage */
+	#mypage_text{
+		margin-top: 14px;
+		font-size: 9px;
+	}
 }
 @media screen and (min-width:321px) and (max-width: 375px){
 	/* navbar */
@@ -5312,6 +5317,11 @@ input::-moz-focus-inner {
 	#service1_alt{
 		text-decoration: underline;
 	}
+	/* mypage */
+	#mypage_text{
+		margin-top: 14px;
+		font-size: 11px;
+	}
 }
 @media screen and (min-width:376px) and (max-width: 425px){
 	/* navbar */
@@ -5578,6 +5588,11 @@ input::-moz-focus-inner {
 	}
 	#service1_alt{
 		text-decoration: underline;
+	}
+	/* mypage */
+	#mypage_text{
+		margin-top: 10px;
+		font-size: 14px;
 	}
 }
 @media screen and (min-width:426px) and (max-width: 480px){
@@ -5849,6 +5864,10 @@ input::-moz-focus-inner {
 	}
 	#service1_alt{
 		text-decoration: underline;
+	}
+	#mypage_text{
+		margin-top: 7px;
+		font-size: 16px;
 	}
 }
 @media screen and (min-width:481px) and (max-width: 599px){
