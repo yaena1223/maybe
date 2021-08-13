@@ -4814,9 +4814,19 @@ input::-moz-focus-inner {
  }
 
 .testcaution{
-	margin-left: 30px;
-	width: 500px;
+	margin-left: auto; margin-right: auto;
+	width: 750px;
+
 }
 #service1_alt{
 	text-decoration: underline;
+}
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
 }
