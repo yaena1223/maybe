@@ -60,12 +60,12 @@ function showList(){
         }
         
     }
-    moveToCarousel('carousel');
+    moveToCarousel('button_submit');
     //console.log(carouselIndicators);
     //console.log(carouselInner);
 };
 
 function moveToCarousel(seq){
     var offset = $("." + seq).offset();
-    $('html, body').animate({scrollTop : offset.top + 200}, 100);
+    $('html, body').animate({scrollTop : offset.top}, 100);
 }

@@ -4770,3 +4770,63 @@ input::-moz-focus-inner {
 	font-weight: 50;
 	text-align:center;
 }
+
+#board_inner_title1,#service1_main_title,#service2_main_title,#service3_main_title{
+	font-family: dream4;
+ }
+ 
+ #board_inner_explain{
+	font-family: dream4;
+	font-weight: 100;
+ }
+ 
+ #board_p{
+	font-family: 'Do Hyeon', sans-serif;
+ }
+ 
+ #service1_title1,#service1_title2,#service1_title3,#service2_title1,#service2_title2,#service2_title3,#service3_title1,
+ #service3_title2,#service3_title3,#board_title1,#board_title2,#board_title3{
+	font-family: dream4;
+ }
+ 
+ #service1_step_p,#service2_step_p,#service3_step_p{
+	font-family: dream4 !important;
+	
+ }
+ 
+ #testmain_button{
+ font-family: dream4;
+ }
+ #beforetohigh_button,#beforetolow_button, #gotoservice2_button{
+ font-family: dream4;
+ }
+ 
+ #low_result,#high_result{
+ font-family: dream4;
+ }
+ 
+ #gotoservice3_button{
+	font-family: dream4;
+ }
+ 
+ .low_result_nologin{
+	font-family: dream4;
+ }
+
+.testcaution{
+	margin-left: auto; margin-right: auto;
+	width: 750px;
+
+}
+#service1_alt{
+	text-decoration: underline;
+}
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
+}

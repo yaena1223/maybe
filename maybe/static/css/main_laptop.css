@@ -136,6 +136,7 @@ input::-moz-focus-inner {
 				font-size: 13pt;
 			}
 
+			
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3373,7 +3374,6 @@ input::-moz-focus-inner {
 
 		}
 
-		}
 
 /* Wrapper */
 
@@ -3401,7 +3401,21 @@ input::-moz-focus-inner {
 			line-height: 2;
 			/* text-transform: uppercase; */
 		}
+		@media screen and (max-width: 1439px) {
 
+			#wrapper > header {
+				padding: 9em 0 6.25em 0 ;
+				background-color: #2e3141;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-size: auto,
+	 cover;
+				background-position: center,
+	 0% 30%;
+				margin-bottom: -6.5em;
+			}
+	
+		}
+	
 	@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
@@ -4033,6 +4047,7 @@ input::-moz-focus-inner {
 
 .content_second_select{
 	margin: 0% 20%;
+	
 }
 .inner p{
 	color: white;
@@ -4041,7 +4056,9 @@ input::-moz-focus-inner {
 	text-align: center;
 	border: 3px solid white;
 }
-
+#my_min{
+	margin-top: 40px;
+}
 #my_min, #my_max{
 	color: white;
 }
@@ -4057,9 +4074,15 @@ input::-moz-focus-inner {
 	margin-top: 100px;
 	/* visibility: hidden; */
 }
+
+.button_submit{
+	margin-top:20px;
+	text-align: center;
+}
+
 #button1{
-	margin-left: 46%;
-	margin-top: 50px;
+	text-align: center;
+
 }
 #button1:focus + .carousel{
 	visibility: visible;
@@ -4446,8 +4469,8 @@ input::-moz-focus-inner {
 .low_result,.high_result{
  position: absolute;
  top:50px;
- padding: 30px; 
- 
+ padding-top: 40px; 
+ padding-left: 20px;
 }
 
 .beforetohigh{
@@ -4515,7 +4538,7 @@ input::-moz-focus-inner {
 
 #user_username{
 	font-family: dream4;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
  }
  
@@ -4682,6 +4705,72 @@ input::-moz-focus-inner {
 	font-family: dream4;
 }
 
-.low_result_nologin{
+.low_result_nologin,.high_result_nologin{
+	font-family: dream4;
+	position: relative;
+ 	top:-20px;
+}
+
+#new_p,#edit_p{
+	margin-top: 100px;
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 40px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.table{
+	font-family:"Source Sans Pro", Helvetica, sans-serif;
+}
+
+#mypage_user{
+	font-family: dream4;
+}
+
+h4{
+	font-family: dream4;
+}
+
+#service1_title1,#service2_title1,#service3_title1,#board_title1{
+	font-size:25px;
+}
+
+
+
+#like-icon{
+	color: red;
+}
+#content{
+	margin-top: 100px;
+	font-family:'Do Hyeon', sans-serif; 
+	font-size: 20px;
+}
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+#mypage_user_key, #mypage_user_value{
+	display: flex;
+}
+.testcaution{
+	margin-left: auto; margin-right: auto;
+	width: 500px;
+}
+#service1_alt{
+	text-decoration: underline;
+}
+
+
+tbody{
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	color : white;
+}
+
+#mypage_text{
+	font-family: dream4;
+}
+
+#user_username_plus{
 	font-family: dream4;
 }

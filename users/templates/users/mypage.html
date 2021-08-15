@@ -7,7 +7,7 @@
     <br><br><br>
     <div id="mypage_user">
       <div id="mypage_user_key">
-        <h4><span id="user_username" style="text-transform:none;">{{user.username}}</span></h4><h4>님이 최근에 성공한 음역대</h4>
+        <h4><span id="user_username" style="text-transform:none;">{{user.username}}</span></h4><h4 id = "mypage_text">님이 최근에 성공한 음역대</h4>
       </div>
       <div id="mypage_user_value">
         <h4 id="only_low_result"></h4>
@@ -31,12 +31,13 @@
       <th>{{ forloop.revcounter }}</th>
       <td scope="row"><a href="{%url 'main:request_detail' board.id%}">{{board.song}}</a></td>
       <td><a href="{%url 'main:request_detail' board.id%}">{{board.singer}}</a></td>
-      <td id="mypage_td">{{board.date}}</td>
-      <td id="mypage_td">{{board.like_count}}</td>
+      <td id="mypage_td" style = 'color:white;'>{{board.date}}</td>
+      <td id="mypage_td" style = 'color:white;'>{{board.like_count}}</td>
     </tr>   
     {% endfor %}
   </tbody>
 </table>
 </div>
 </section>
+<br><br><br><br><br><br><br><br>
 {% endblock  %}
